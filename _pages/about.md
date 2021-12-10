@@ -31,7 +31,7 @@ Research interest: transfer learning, meta-learning, out-of-distribution general
 
 #### Preprints
 
-1. Yiqiang Chen, Wang Lu, <u>**Jindong Wang**</u>, Xin Qin, and Tao Qin. Federated Learning with Adaptive Batchnorm for Personalized Healthcare. arXiv preprint arXiv:2112.00734. [[arXiv](https://arxiv.org/abs/2112.00734)]
-2. Wenxin Hou, Han Zhu, Yidong Wang, <u>**Jindong Wang**</u><sup>#</sup>, Tao Qin, Renjun Xu, and Takahiro Shinozaki. Exploiting Adapters for Cross-lingual Low-resource Speech Recognition. arXiv preprint arXiv:2105.11905. [[arXiv](https://arxiv.org/abs/2105.11905)] [[code](https://github.com/jindongwang/transferlearning/tree/master/code/ASR)]
-3. <u>**Jindong Wang**</u>, Wenjie Feng, Chang Liu, Chaohui Yu, Mingxuan Du, Renjun Xu, Tao Qin, and Tie-Yan Liu. Learning Invariant Representations across Domains and Tasks. arXiv preprint arXiv:2103.05114. [[arXiv](https://arxiv.org/abs/2103.05114)]
-4. Chaohui Yu, <u>**Jindong Wang**</u><sup>#</sup>, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, and Tie-Yan Liu. Learning to match distributions for domain adaptation. arXiv preprint arXiv:2007.10791. [[arXiv](http://arxiv.org/abs/https://arxiv.org/abs/2007.10791)]
+1. Yiqiang Chen, Wang Lu, <u>Jindong Wang</u>, Xin Qin, and Tao Qin. Federated Learning with Adaptive Batchnorm for Personalized Healthcare. arXiv preprint arXiv:2112.00734. [[arXiv](https://arxiv.org/abs/2112.00734)]
+2. Wenxin Hou, Han Zhu, Yidong Wang, <u>Jindong Wang</u><sup>#</sup>, Tao Qin, Renjun Xu, and Takahiro Shinozaki. Exploiting Adapters for Cross-lingual Low-resource Speech Recognition. arXiv preprint arXiv:2105.11905. [[arXiv](https://arxiv.org/abs/2105.11905)] [[code](https://github.com/jindongwang/transferlearning/tree/master/code/ASR)]
+3. <u>Jindong Wang</u>, Wenjie Feng, Chang Liu, Chaohui Yu, Mingxuan Du, Renjun Xu, Tao Qin, and Tie-Yan Liu. Learning Invariant Representations across Domains and Tasks. arXiv preprint arXiv:2103.05114. [[arXiv](https://arxiv.org/abs/2103.05114)]
+4. Chaohui Yu, <u>Jindong Wang</u><sup>#</sup>, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, and Tie-Yan Liu. Learning to match distributions for domain adaptation. arXiv preprint arXiv:2007.10791. [[arXiv](http://arxiv.org/abs/https://arxiv.org/abs/2007.10791)]
