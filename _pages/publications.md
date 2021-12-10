@@ -7,16 +7,6 @@ years: [2022, 2021, 2020, 2019, 2018, 2017, 2016]
 nav: true
 ---
 
-#### Preprints
-
-<div class="publications">
-
-{% for y in page.years %}
-  {% bibliography -f preprint -q @*[year={{y}}]* %}
-{% endfor %}
-
-</div>
-
 #### Books
 
 <div class="publications">
