@@ -10,6 +10,7 @@ nav: true
 - Organizer: IJCAI 2019 Publicity co-chair, ICDM 2019 session chair.
 - Conference PC member: ICML 2021, KDD 2021, UbiComp 2021, ICCV 2021, CVPR 2021, ICLR 2021, WWW 2021, AAAI 2021, NeurIPS 2020, ICML 2020, AAAI 2020, UbiComp 2020, IEEE VAST 2020, CHI 2019, Ubicomp 2019.
 - Journal reviewer: TPAMI, TKDE, TMM, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
+- Membership: member of CCF technical committee pervasive computing (TCPC) and human computer interaction (TCHCI), CCF member.
 
 #### Awards
 
