@@ -8,13 +8,13 @@ nav: true
 #### Academic service
 
 - Organizer: IJCAI 2019 Publicity co-chair, ICDM 2019 session chair.
-- Conference PC member: ICLR 2022, CVPR 2022, WWW 2022, SDM 2022, IJCAI 2022, AAAI 2022, NeurIPS 2021, ICML 2021, ICLR 2021, KDD 2021, UbiComp 2021, ICCV 2021, CVPR 2021, WWW 2021, AAAI 2021, NeurIPS 2020, ICML 2020, AAAI 2020, UbiComp 2020, IEEE VAST 2020, CHI 2019, Ubicomp 2019.
-- Journal reviewer: TPAMI, TKDE, TMM, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
+- Conference PC member: ICML 2022, ICLR 2022, CVPR 2022, WWW 2022, SDM 2022, IJCAI 2022, AAAI 2022, NeurIPS 2021, ICML 2021, ICLR 2021, KDD 2021, UbiComp 2021, ICCV 2021, CVPR 2021, WWW 2021, AAAI 2021, NeurIPS 2020, ICML 2020, AAAI 2020, UbiComp 2020, IEEE VAST 2020, CHI 2019, Ubicomp 2019.
+- Journal reviewer: TPAMI, AI Journal, TKDE, TMM, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
 - Membership: member of CCF technical committee pervasive computing (TCPC) and human computer interaction (TCHCI), CCF member.
 
 #### Awards
 
-- Distinguished doctoral thesis award (中国科学院百篇优秀博士学位论文) 2020.
+- Distinguished doctoral thesis award (中国科学院优秀博士学位论文奖) 2020.
 - Best Application Paper Award. IJCAI-19 Federated Machine Learning Workshop 2019.
 - Outstanding Scholarship of CAS president (中科院院长优秀奖) 2019.
 - Special scholarship of ICT (中科院计算所所长特别奖) 2019.
@@ -22,13 +22,11 @@ nav: true
 - Student Travel Grant. ACM International Conference on Multimedia (ACMMM) 2018.
 - Outstanding Reviewer. Neurocomputing. 2018.
 - Best Paper. The 3rd International Conference on Crowd Science and Engineering (ICCSE) 2018.
-- Merit Student, UCAS 2018.
 - Student Travel Award. International Conference on Machine Learning (ICML) 2018.
 - Student Scholarship. AAAI conference on Artificial Intelligence (AAAI) 2018.
 - National Scholarship for PhD students, Ministry of Education 2017.
 - Merit Student, UCAS 2017.
-- Second prize of Bewinner Innovation scholarship. 2017
-- Merit Student, UCAS 2015.
+- Second prize of Bewinner Innovation scholarship. 2017.
 - Excellent Graduate, NCUT 2014.
 - Excellent Bachelor's Graduation Thesis, NCUT 2014.
 - Beijing Merit Student, Beijing City 2013.
