@@ -7,7 +7,7 @@ years: [2022, 2021, 2020, 2019, 2018, 2017, 2016]
 nav: true
 ---
 
-[Conference papers](https://jd92.wang/publications/#conference-papers) | [Journal papers](https://jd92.wang/publications/#journal-papers)
+[[Conference papers](#conference-papers)] | [[Journal papers](#journal-papers)]
 
 #### Books
 
