@@ -2,7 +2,7 @@
 ---
 
 <div class="row">
-  <div class="col-sm-2 abbr" style="max-width: 10%;">
+  <div class="col-sm-2 abbr" style="max-width: 12%;">
   {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
     <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
@@ -90,6 +90,9 @@
       {% endif %}
       {% if entry.year %}
         {{entry.year}}
+      {% endif %}
+      {% if entry.special %}
+        <strong>({{entry.special}})</strong>
       {% endif %}
       </div>
     {% endif %}
