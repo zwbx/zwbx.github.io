@@ -33,7 +33,7 @@ nav: true
 - National Scholarship (3x), Ministry of Education 2012, 2013, 2014.
 
 #### Talks
-
+- Invited talk: **Transfer learning: low-resource, generalization, and safety**, at AI Time. Apr. 2022. [[PDF](../assets/files/l16_aitime.pdf)] [Video soon]
 - Invited talk: **Recent advance in transfer learning**, at Jiqizhixin. Jun. 2021.
                     [[PDF](http://jd92.wang/assets/files/l15_jiqizhixin.pdf)]  [[Video](https://www.bilibili.com/video/BV1N5411T7Sb)]
 - Invited course: **Transfer learning**, at Tsinghua University. Dec. 2019. (THU's
