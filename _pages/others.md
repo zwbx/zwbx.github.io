@@ -7,10 +7,20 @@ nav: true
 
 #### Academic service
 
-- Organizer: IJCAI 2019 Publicity co-chair, ICDM 2019 session chair.
-- Conference PC member: ICML 2022, ICLR 2022, CVPR 2022, WWW 2022, SDM 2022, IJCAI 2022, AAAI 2022, NeurIPS 2021, ICML 2021, ICLR 2021, KDD 2021, UbiComp 2021, ICCV 2021, CVPR 2021, WWW 2021, AAAI 2021, NeurIPS 2020, ICML 2020, AAAI 2020, UbiComp 2020, IEEE VAST 2020, CHI 2019, Ubicomp 2019.
-- Journal reviewer: TPAMI, AI Journal, TKDE, TMM, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
-- Membership: member of CCF technical committee pervasive computing (TCPC) and human computer interaction (TCHCI), CCF member.
+- Conference organizer:
+  - IJCAI 2019 Publicity co-chair
+  - ICDM 2019 transfer learning session chair
+- Conference PC member: 
+  - ML area: ICML (2022, 2021, 2020); NeurIPS (2022, 2021, 2020); ICLR (2022, 2021)
+  - AI area: AAAI (2022, 2021, 2020); IJCAI (2022)
+  - CV area: CVPR (2022, 2021); ICCV (2021); ECCV (2022)
+  - DM area: KDD (2021); WWW (2022, 2021), SDM (2022)
+  - HCI area: CHI (2021, 2019), UbiComp/IMWUT (2022, 2021, 2020, 2019), IEEE VAST (2020)
+- Journal reviewer: TPAMI, AI Journal, TKDE, TNNLS, TMM, TIP, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
+- Membership: 
+  - Member of CCF technical committee pervasive computing (TCPC)
+  - Member of human computer interaction (TCHCI)
+  - CCF member.
 
 #### Awards
 
@@ -33,7 +43,8 @@ nav: true
 - National Scholarship (3x), Ministry of Education 2012, 2013, 2014.
 
 #### Talks
-- Invited talk: **Transfer learning: low-resource, generalization, and safety**, at AI Time. Apr. 2022. [[PDF](../assets/files/l16_aitime.pdf)] [Video soon]
+
+- Invited talk: **Transfer learning: low-resource, generalization, and safety**, at AI Time. Apr. 2022. [[PDF](../assets/files/l16_aitime.pdf)] [[Video](https://www.bilibili.com/video/BV1nY411E7Uc/)] [[Zhihu](https://zhuanlan.zhihu.com/p/498902783)]
 - Invited talk: **Recent advance in transfer learning**, at Jiqizhixin. Jun. 2021.
                     [[PDF](http://jd92.wang/assets/files/l15_jiqizhixin.pdf)]  [[Video](https://www.bilibili.com/video/BV1N5411T7Sb)]
 - Invited course: **Transfer learning**, at Tsinghua University. Dec. 2019. (THU's
@@ -60,6 +71,6 @@ nav: true
 
 ##### Collaborating students
 
-- Ph.D students at ICT, CAS: Xin Qin, Wang Lu, Yuxin Zhang, Xiaohai Li.
+- Ph.D students at ICT, CAS: Xin Qin, Wang Lu, Yuxin Zhang, Xiaohai Li, Shuo Ma.
 - Ph.D student at Institute of Acoustics, CAS: Han Zhu.
 - Master students at Tokyo Tech: Bowen Zhang.
