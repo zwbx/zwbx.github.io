@@ -7,8 +7,6 @@ years: [2022, 2021, 2020, 2019, 2018, 2017, 2016]
 nav: true
 ---
 
-[[Conference papers](#conference-papers)] | [[Journal papers](#journal-papers)]
-
 #### Books
 
 <div class="publications">
@@ -19,28 +17,28 @@ nav: true
 
 </div>
 
+#### Pre-prints
 
-#### Conference papers
+<div class="publications">
+
+{% for y in page.years %}
+  {% bibliography -f preprint -q @*[year={{y}}]* %}
+{% endfor %}
+
+</div>
+
+#### Publications
 
 <div class="publications">
 
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
-  {% bibliography -f confs -q @*[year={{y}}]* %}
+  {% bibliography -f pubs -q @*[year={{y}}]* %}
 {% endfor %}
 
 </div>
 
-#### Journal papers
 
-<div class="publications">
-
-{% for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f journal -q @*[year={{y}}]* %}
-{% endfor %}
-
-</div>
 
 <!-- #### Preprints and submissions -->
 <!-- 1. Pooladian, A-A., and Niles-Weed, J. "Entropic estimation of optimal transport maps" (2021) [<a href="https://arxiv.org/pdf/2109.12004.pdf">PDF</a>]
