@@ -66,7 +66,7 @@
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and<em><b>{{author.first}} {{author.last}}#</b></em>
+                and <em><b>{{author.first}} {{author.last}}#</b></em>
               {% else %}
                 {% if coauthor_url %}
                   and <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
