@@ -17,8 +17,8 @@ nav: true
 
 </div>
 
-#### Pre-prints
-
+<details>
+<summary>Preprints</summary>
 <div class="publications">
 
 {% for y in page.years %}
@@ -26,6 +26,7 @@ nav: true
 {% endfor %}
 
 </div>
+</details>
 
 #### Publications
 
