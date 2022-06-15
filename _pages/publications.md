@@ -18,7 +18,7 @@ nav: true
 </div>
 </details>
 
-###### Books
+##### Books
 
 <div class="publications">
 
@@ -28,7 +28,7 @@ nav: true
 
 </div>
 
-###### Papers
+##### Papers
 
 <div class="publications">
 
