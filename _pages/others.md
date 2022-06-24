@@ -7,6 +7,9 @@ nav: true
 
 #### Academic service
 
+- Journal editorship:
+  - Editorial board of young scientist, Journal of Computer Science and Technology (JCST) 
+
 - Conference organizer:
   - IJCAI 2019 Publicity co-chair
   - ICDM 2019 transfer learning session chair
