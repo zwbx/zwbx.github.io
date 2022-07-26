@@ -9,17 +9,18 @@ nav: true
 
 - Journal editorship:
   - Editorial board of young scientist, Journal of Computer Science and Technology (JCST) 
-
 - Conference organizer:
   - IJCAI 2019 Publicity co-chair
   - ICDM 2019 transfer learning session chair
+- Conference senior member/area chair:
+  - AAAI 2023 senior PC
 - Conference PC member: 
   - ML area: ICML (2022, 2021, 2020); NeurIPS (2022, 2021, 2020); ICLR (2022, 2021)
-  - AI area: AAAI (2022, 2021, 2020); IJCAI (2022)
+  - AI area: AAAI (2023, 2022, 2021, 2020); IJCAI (2022)
   - CV area: CVPR (2022, 2021); ICCV (2021); ECCV (2022)
-  - DM area: KDD (2021); WWW (2022, 2021), SDM (2022)
-  - HCI area: CHI (2021, 2019), UbiComp/IMWUT (2022, 2021, 2020, 2019), IEEE VAST (2020)
-- Journal reviewer: TPAMI, AI Journal, TKDE, TNNLS, TMM, TIP, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
+  - DM area: KDD (2021); WWW (2022, 2021), SDM (2022), WSDM (2023)
+  - HCI area: UbiComp/IMWUT (2022, 2021, 2020, 2019), CHI (2021, 2019), IEEE VAST (2020)
+- Journal reviewer: TPAMI, AI Journal, TKDE, TMLR, TNNLS, TMM, TIP, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
 - Membership: 
   - Member of CCF technical committee pervasive computing (TCPC)
   - Member of human computer interaction (TCHCI)
@@ -27,6 +28,7 @@ nav: true
 
 #### Awards
 
+- Innovation award. IJCAI federated learning workshop 2022.
 - Distinguished doctoral thesis award (中国科学院优秀博士学位论文奖) 2020.
 - Best Application Paper Award. IJCAI-19 Federated Machine Learning Workshop 2019.
 - Outstanding Scholarship of CAS president (中科院院长优秀奖) 2019.
@@ -65,6 +67,7 @@ nav: true
 
 ##### Interns at MSRA
 
+- 2022.07 -- present, Runkai Zheng, Master @ CUHK (Shenzhen).
 - 2021.11 -- present, Yidong Wang, Master @ Tokyo Institute of Technology.
 - 2021.06 -- 2021.11, Wang Lu, Ph.D @ ICT, Chinese Academy of Sciences. Now: continue his Ph.D in ICT.
 - 2020.12 -- 2021.05, [Wenxin Hou](https://houwx.net), Master @ Tokyo Institute of Technology. Now: SDE at Microsoft.
