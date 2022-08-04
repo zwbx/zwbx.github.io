@@ -7,7 +7,7 @@ title: 迁移学习导论
 nav: true
 ---
 
-<img src = "https://s1.ax1x.com/2022/08/04/vekmjK.png" aligh = "right" width = "200">
+<img src = "https://s1.ax1x.com/2022/08/04/vekmjK.png" align = "right" width = "200">
 
 <img src = "https://z3.ax1x.com/2021/07/13/WECOu8.jpg" align = "right" width = "200">
 
