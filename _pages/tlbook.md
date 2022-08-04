@@ -7,9 +7,13 @@ title: 迁移学习导论
 nav: true
 ---
 
+<img src = "https://s1.ax1x.com/2022/08/04/vekmjK.png" aligh = "right" width = "200">
+
 <img src = "https://z3.ax1x.com/2021/07/13/WECOu8.jpg" align = "right" width = "200">
 
 王晋东，陈益强 著 
+
+**NEW: 第二版已上市！！！**
 
 - [介绍](#介绍)
 - [本书结构与目录](#本书结构与目录)
@@ -48,21 +52,21 @@ nav: true
 
 ## 本书结构与目录
 
-下图为本书结构，请点击[这里](https://z3.ax1x.com/2021/05/20/godNRJ.png)看原图。
+下图为本书结构，请点击[这里](https://s1.ax1x.com/2022/08/04/vek1Nd.png)看原图。[第一版目录](https://z3.ax1x.com/2021/05/20/godNRJ.png)
 
-点击[这里](https://www.jianguoyun.com/p/DVQTcAgQjKnsBRjWvIAE)看完整目录。
+点击[这里](https://www.jianguoyun.com/p/DcdPeVoQjKnsBRjQmdAEIAA)看完整目录。[第一版目录](https://www.jianguoyun.com/p/DVQTcAgQjKnsBRjWvIAE)
 
-<img src = "https://z3.ax1x.com/2021/05/20/godNRJ.png" width = "600">
+<img src = "https://s1.ax1x.com/2022/08/04/vek1Nd.png" width = "600">
 
 ## 购买
 
-[京东链接](https://item.jd.com/13283188.html)
+[**第二版(NEW!!!)**](https://item.jd.com/13272157.html)  [第一版](https://item.jd.com/13283188.html)  
 
 ## 专家推荐意见
 
 - 迁移学习旨在利用已有的数据、模型和知识，通过领域相似性和“举一反三”的联想能力，把学到的通用知识适配到新的领域、场景和任务上，它使机器学习拥有更强大的泛化能力。本书作者长期和我的实验室合作，积累了丰富的科研经验，多年来辛勤地在大众媒体上普及迁移学习的相关知识。在本书中，他们保持了一贯的简明通透的写作风格，用贴近学生群体的语言，将迁移学习的发展历史、基础知识和最新进展娓娓道来。同时，本书配有用于实践的源码和数据集，增加了动手练习的环节，提高了趣味性。作为长期耕耘在迁移学习这一人工智能领域的学者和业界首本迁移学习著作（《迁移学习》）的作者，我强力推荐这本书给有志于从事迁移学习研究的同学，更快地入门和学习！———杨强 微众银行首席人工智能官、香港科技大学讲席教授，ACM/AAAI/IEEE Fellow
 
-- 迁移学习是机器学习的一个重要研究分支，有广泛的应用价值。该书叙述简洁明了、内容丰富详实，对希望了解并应用迁移学习的读者很有帮助！———周志华 南京大学教授， ACM/AAAI/IEEE Fellow
+- 迁移学习是机器学习的一个重要研究分支，有广泛的应用价值。该书叙述简洁明了、内容丰富详实，对希望了解并应用迁移学习的读者很有帮助！———周志华 南京大学教授，ACM/AAAI/IEEE Fellow
 
 - 迁移学习对于增强训练模型的适应性具有重要意义，受到很多学者的关注。这本书深入浅出、系统性地介绍了主要的迁移学习方法，并结合多个领域的应用进行示例分析，为从事相关技术的研究人员提供了非常有益的参考。———陶建华博士 中国科学院自动化研究所研究员，模式识别国家重点实验室副主任
 
@@ -74,7 +78,9 @@ nav: true
 
 ## 代码
 
-书中的所有代码，以及其他方法的代码可以在[这里](https://github.com/jindongwang/transferlearning/tree/master/code)找到。
+第二版代码：https://github.com/jindongwang/tlbook-code
+
+第一版书中的所有代码，以及其他方法的代码可以在[这里](https://github.com/jindongwang/transferlearning/tree/master/code)找到。
 
 ## 疑问、建议和意见
 
