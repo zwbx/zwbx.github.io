@@ -8,7 +8,7 @@ nav: true
 1. Leading a pupular transfer learningresource projects on Github: [Transfer learning](https://github/jindongwang/transferlearning) [![Transfer learning repo](https://img.shields.io/github/stars/jindongwang/transferlearning?style=social)](https://github/jindongwang/transferlearning)
 2. USB: A unified semi-supervised learning toolbox for CV, NLP, and Audio: [USB](https://github.com/microsoft/Semi-supervised-learning) [![USB](https://img.shields.io/github/stars/microsoft/semi-supervised-learning?style=social)](https://img.shields.io/github/stars/microsoft/semi-supervised-learning)
 3. PersonalizedFL: a personalized federated learning libraty: [PersonalizedFL](https://github.com/microsoft/PersonalizedFL) [![PersonalizedFL](https://img.shields.io/github/stars/microsoft/personalizedfl?style=social)](https://img.shields.io/github/stars/microsoft/personalizedfl)
-4. A unified Pytorch-based semi-supervised learning library: [TorchSSL](https://github.com/TorchSSL/TorchSSL)) [![SSL repo](https://img.shields.io/github/stars/torchssl/torchssl?style=social)](https://github/stars/torchssl/torchssl)
+4. A unified Pytorch-based semi-supervised learning library: [TorchSSL](https://github.com/TorchSSL/TorchSSL) [![SSL repo](https://img.shields.io/github/stars/torchssl/torchssl?style=social)](https://github/stars/torchssl/torchssl)
 5. An easy-to-use speech recognition toolkit based on Espnet: [EasyESPNet](https://github.com/jindongwang/EasyEspnet)
 6. Leading the transfer learning tutorial (迁移学习简明手册) on Github:
                     [Tutorial](https://github.com/jindongwang/transferlearning-tutorial)
