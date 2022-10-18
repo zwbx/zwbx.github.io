@@ -16,8 +16,8 @@
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
-      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">{{entry.title}}</div>
-      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.2em;">
+      <div class="title" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: 0em;">{{entry.title}}</div>
+      <div class="author" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: 0em;">
         {% for author in entry.author_array %}
           {% assign author_is_self = false %}
           {% if author.last == site.scholar.last_name%}
@@ -79,7 +79,7 @@
         {% endfor %}
       </div>
 
-      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.3em;">
+      <div class="periodical" style="padding-top: 0em; padding-bottom: 0px; margin-bottom: -.1em;">
       {% if entry.type == "article" %}
         <em>{{entry.journal}}</em>
       {% elsif entry.type == "inproceedings" %}
@@ -97,7 +97,7 @@
       </div>
     {% endif %}
 
-    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.8em;">
+    <div class="links" style="padding-top: 0em; padding-bottom: 0em; height: 30px; margin-bottom: -.5em;">
     <!-- {% if entry.abstract %}
       <a class="abstract btn btn-sm z-depth-0" role="button" style="padding-top: 0em; padding-bottom: 0px;">Abs</a>
     {% endif %} -->

@@ -7,6 +7,7 @@ nav: true
 
 #### Talks
 
+- Invited talk: **Building robust machine learning models**, at MLNLP community. Sep. 2022. [[Video & PDF](https://www.bilibili.com/video/BV1hP411V7SP/)]
 - Invited talk: **Transfer learning: low-resource, generalization, and safety**, at AI Time. Apr. 2022. [[PDF](../assets/files/l16_aitime.pdf)] [[Video](https://www.bilibili.com/video/BV1nY411E7Uc/)] [[Zhihu](https://zhuanlan.zhihu.com/p/498902783)]
 - Invited talk: **Recent advance in transfer learning**, at Jiqizhixin. Jun. 2021.
                     [[PDF](http://jd92.wang/assets/files/l15_jiqizhixin.pdf)]  [[Video](https://www.bilibili.com/video/BV1N5411T7Sb)]
