@@ -45,6 +45,8 @@ nav: true
 
 ##### Collaborating students
 
-- Ph.D students at ICT, CAS: Xin Qin, Wang Lu, Yuxin Zhang, Xiaohai Li, Shuo Ma.
+- Ph.D students at ICT, CAS: Xin Qin, Wang Lu, Yuxin Zhang.
 - Ph.D student at Institute of Acoustics, CAS: Han Zhu.
-- Master students at Tokyo Tech: Bowen Zhang.
+- Ph.D student at Carnegie Mellon University: Hao Chen.
+- Master/Ph.D students at Institute of Automation, CAS: YiFan Zhang, Kaijie Zhu.
+- Ph.D student at University of Tokyo: Yivan Zhang.
