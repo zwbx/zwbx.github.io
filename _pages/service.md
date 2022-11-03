@@ -17,8 +17,8 @@ nav: true
 - Conference PC member: 
   - ML area: ICML (2022, 2021, 2020); NeurIPS (2022, 2021, 2020); ICLR (2023, 2022, 2021)
   - AI area: AAAI (2023, 2022, 2021, 2020); IJCAI (2022)
-  - CV area: CVPR (2022, 2021); ICCV (2021); ECCV (2022)
-  - DM area: KDD (2021); WWW (2022, 2021); SDM (2023, 2022); WSDM (2023)
+  - CV area: CVPR (2023, 2022, 2021); ICCV (2021); ECCV (2022)
+  - DM area: KDD (2021); WWW (2023, 2022, 2021); SDM (2023, 2022); WSDM (2023)
   - HCI area: UbiComp/IMWUT (2022, 2021, 2020, 2019); CHI (2021, 2019); IEEE VAST (2020)
 - Journal reviewer: TPAMI, AI Journal, TKDE, TMLR, TNNLS, TMM, TIP, TMC, ACM CSUR, ACM TIST, IEEE TBD, Knowledge-Based Systems, Neurocomputing, Pervasive and Mobile Computing.
 - Membership: 
