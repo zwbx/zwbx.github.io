@@ -11,16 +11,15 @@ nav: true
 
 #### Preprints
 
-<!-- <details>
-<summary>Preprints</summary> -->
-<div>
-
-{% for y in page.years %}
-  {% bibliography -f preprint -q @*[year={{y}}]* %}
-{% endfor %}
-
-</div>
-<!-- </details> -->
+- GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective. Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, **Jindong Wang**, Xing Xie, Yue Zhang. [[arxiv](https://arxiv.org/abs/2211.08073)]
+- Domain-Specific Risk Minimization for Out-of-Distribution Generalization. YiFan Zhang, **Jindong Wang**, Jian Liang, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, and Dacheng Tao. [[arxiv](https://arxiv.org/pdf/2208.08661.pdf)]
+- Out-of-distribution Representation Learning for Time Series Classification. Wang Lu, **Jindong Wang**, Xinwei Sun, Yiqiang Chen, and Xing Xie. [[arxiv](https://arxiv.org/abs/2209.07027)]
+- Conv-Adapter: Exploring Parameter Efficient Transfer Learning for ConvNets. Hao Chen, Ran Tao, Han Zhang, Yidong Wang, Wei Ye, Jindong Wang, Guosheng Hu, and Marios Savvides. [[arxiv](https://arxiv.org/abs/2208.07463)]
+- Equivariant Disentangled Transformation for Domain Generalization under Combination Shift. Yivan Zhang, **Jindong Wang**, Xing Xie, and Masashi Sugiyama. [[arxiv](https://arxiv.org/abs/2208.02011)]
+- Boosting Cross-Domain Speech Recognition with Self-Supervision. Han Zhu, Gaofeng Cheng, **Jindong Wang**, Wenxin Hou, Pengyuan Zhang, and Yonghong Yan. [[arxiv](https://arxiv.org/abs/2206.09783)]
+- FreeMatch: Self-adaptive Thresholding for Semi-supervised Learning. Yidong Wang, Hao Chen, Qiang Heng, Wenxin Hou, Marios Savvides, Takahiro Shinozaki, Bhiksha Raj, Zhen Wu, **Jindong Wang**, and Bernt Schiele. [[arxiv](https://arxiv.org/abs/2205.07246)]
+- Learning Invariant Representations across Domains and Tasks. **Jindong Wang**, Wenjie Feng, Chang Liu, Chaohui Yu, Mingxuan Du, Renjun Xu, Tao Qin, and Tie-Yan Liu. [[arxiv](https://arxiv.org/abs/2103.05114)]
+- Learning to match distributions for domain adaptation. Chaohui Yu, **Jindong Wang**, Chang Liu, Tao Qin, Renjun Xu, Wenjie Feng, Yiqiang Chen, and Tie-Yan Liu. [[arxiv](https://arxiv.org/abs/2007.10791)]
 
 #### Books
 
@@ -42,26 +41,3 @@ nav: true
 {% endfor %}
 
 </div>
-
-
-
-<!-- #### Preprints and submissions -->
-<!-- 1. Pooladian, A-A., and Niles-Weed, J. "Entropic estimation of optimal transport maps" (2021) [<a href="https://arxiv.org/pdf/2109.12004.pdf">PDF</a>]
-
-#### Conference papers
-1. Pooladian, A-A.\*, Finlay, C., Hoheisel, T., and Oberman, A. "A principled approach for generating adversarial images under non-smooth dissimilarity metrics", in *23rd International Conference on Artificial Intelligence and Statistics (AISTATS 2020)*. [<a href="https://github.com/APooladian/FarkasLayers">Github</a>] [<a href="https://arxiv.org/pdf/1908.01667.pdf">PDF</a>]
-2. Finaly C.\*, Pooladian, A-A.\*, and Oberman, A., " The LogBarrier Adversarial Attack: Making effective use of decision boundary information", in *IEEE International Conference on Computer Vision (ICCV 2019)* [<a href="https://github.com/cfinlay/logbarrier">Github</a>] [<a href="https://arxiv.org/pdf/1903.10396.pdf">PDF</a>] 
-
-#### Workshop papers
-1. Finlay, C.\*, Gerolin, A.\*, Oberman, A., Pooladian A-A.\* (alphabetical) "Learning normalizing flows from Entropy-Kantorovich potentials", in *ICML workshop on Invertible Neural Networks, Normalizing Flows, and Explicit Likelihood Models (INNF+ 2020)*, with contributing talk, [<a href="https://arxiv.org/pdf/2006.06033.pdf">PDF</a>]
-
-#### Journal articles
-1. Hoheisel, T., Pablos, B., Pooladian, A-A., Schwartz, A., and Steverango, L. (alphabetical) "A study of one-parameter regularizations for mathematical programs with vanishing constraints", in *Optimization Methods and Software* (2020) [<a href="https://arxiv.org/pdf/2006.15662.pdf">PDF</a>]
-
-#### Deep learning projects
-1. Pooladian, A-A.\*, Finlay, C., and Oberman, A., "Farkas layers: Don't shift the data, fix the geometry" (2019) [<a href="https://github.com/APooladian/FarkasLayers">Github</a>] [<a href="https://arxiv.org/pdf/1910.02840.pdf">PDF</a>]
-2. Pooladian, A-A.\*, Iannantuono, A., Finlay, C., and Oberman, A., "A Langevin dynamics based approach to generating sparse adversarial perturbations" (2019) [<a href="http://www.math.mcgill.ca/apooladian/LangevinDynamicsPreprint.pdf">PDF</a>] 
-3. Pooladian, A-A.\*, Orfanides, G., "Sparse autoencoder using Scholtes relaxation scheme" (2018)
--->
-<!-- #### Fun projects
-1. Pooladian, A-A., "Batchwise projection algorithm onto total variation ball" (2019) [abcd](https://github.com/APooladian/TVProjection) -->
