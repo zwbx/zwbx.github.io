@@ -5,12 +5,12 @@ permalink: /students/
 nav: true
 ---
 
-##### Interns at MSRA
+#### Interns at MSRA
 
 Current interns:
 
 - 2022.10 -- present, Xixu Hu, Ph.D @ City University of Hong Kong.
-- 2022.07 -- present, Runkai Zheng, Master @ CUHK (Shenzhen).
+- 2022.07 -- present, Runkai Zheng, Master @ Chinese University of Hong Kong (Shenzhen).
 
 Alumni:
 
@@ -29,9 +29,10 @@ Alumni:
   - Publications during internship: CIKM'21.
 - 2019.10 -- 2020.01, Weixin Lu, Bachelor @ Peking University. Now: Master @ New York University.
 
-##### Collaborating students
+#### Collaborating students
 
 - Ph.D students at ICT, CAS: Xin Qin, Wang Lu, Yuxin Zhang.
+- Master student at Tsinghua University: Lu Tan.
 - Ph.D student at Institute of Acoustics, CAS: Han Zhu.
 - Ph.D student at Carnegie Mellon University: Hao Chen.
 - Master/Ph.D students at Institute of Automation, CAS: YiFan Zhang, Kaijie Zhu.
