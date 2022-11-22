@@ -11,6 +11,8 @@ nav: true
 
 #### Preprints
 
+
+- An Embarrassingly Simple Baseline for Imbalanced Semi-Supervised Learning. Hao Chen, Yue Fan, Yidong Wang, **Jindong Wang**, Bernt Schiele, Xing Xie, Marios Savvides, Bhiksha Raj. [[arxiv](https://arxiv.org/abs/2211.11086)] 
 - GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective. Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, **Jindong Wang**, Xing Xie, Yue Zhang. [[arxiv](https://arxiv.org/abs/2211.08073)]
 - Domain-Specific Risk Minimization for Out-of-Distribution Generalization. YiFan Zhang, **Jindong Wang**, Jian Liang, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, and Dacheng Tao. [[arxiv](https://arxiv.org/pdf/2208.08661.pdf)]
 - Out-of-distribution Representation Learning for Time Series Classification. Wang Lu, **Jindong Wang**, Xinwei Sun, Yiqiang Chen, and Xing Xie. [[arxiv](https://arxiv.org/abs/2209.07027)]
