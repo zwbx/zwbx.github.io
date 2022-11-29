@@ -23,6 +23,8 @@ I'm currently a Senior Researcher at [Microsoft Research Asia (MSRA)](http://www
 
 **Research interest:** robust machine learning, out-of-distribution / domain generalization, transfer learning, semi-supervised learning, federated learning, and related applications such as activity recognition and computer vision. *Interested in internship or collaboration? Contact me.*
 
+**Announcement:** I'm experimenting a new form of research collaboration. You can click [here](https://forms.office.com/r/32Fs6uAjT6) if you are interested!
+
 <!-- ### Highlights
 
 1. Four of my papers are highly cited and ranked top 20 globally in recent 5 years in Google scholar metrics! See [here](https://zhuanlan.zhihu.com/p/421192644).
