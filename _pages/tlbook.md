@@ -51,7 +51,7 @@ Transfer learning is one of the most important technologies in the era of artifi
 
 This book offers a comprehensive tutorial on an overview of transfer learning, introducing new researchers in this area to both classic and more recent algorithms. Most importantly, it takes a “student’s” perspective to introduce all the concepts, theories, algorithms, and applications, allowing readers to quickly and easily enter this area. Accompanying the book, detailed code implementations are provided to better illustrate the core ideas of several important algorithms, presenting good examples for practice.
 
-Structure of this book is as follows. Click [HERE](https://www.jianguoyun.com/p/DSm27rYQjKnsBRjEr-4EIAA) for the detailed table of contents.
+Structure of this book is as follows. Click [HERE](https://www.jianguoyun.com/p/DSm27rYQjKnsBRjEr-4EIAA) for the detailed table of contents. Read or by it in [here](https://link.springer.com/book/9789811975837).
 
 <img src="/assets/img/tlbook-framework.jpg" width="600">
 
@@ -62,7 +62,7 @@ Accompanying code is on Github: [https://github.com/jindongwang/tlbook-code](htt
 
 ### Figures
 
-Figures in this book is available at: https://www.jianguoyun.com/p/DeqZHLcQjKnsBRjbr-4EIAA (access code: a7zmf7). Feel free to use them for your own research.
+Figures in this book is available in [here](https://www.jianguoyun.com/p/DeqZHLcQjKnsBRjbr-4EIAA) (access code: a7zmf7). Feel free to use them for your own research.
 
 ### Suggestions and comments
 
@@ -74,9 +74,9 @@ The Chinese version of this book is recommeneded by several well-established sch
 
 ### Contact and resources
 
-- Personal website: http://jd92.wang
-- Video tutorial on Youtube: https://www.youtube.com/channel/UCae3q_-nAl829Qw9PVE4h1Q
-- Github repo: https://github.com/jindongwang/transferlearning
+- Personal website: [http://jd92.wang](http://jd92.wang)
+- Video tutorial on Youtube: [https://www.youtube.com/channel/UCae3q_-nAl829Qw9PVE4h1Q](https://www.youtube.com/channel/UCae3q_-nAl829Qw9PVE4h1Q)
+- Github repo: [https://github.com/jindongwang/transferlearning](https://github.com/jindongwang/transferlearning)
 
 ---
 
@@ -140,7 +140,7 @@ The Chinese version of this book is recommeneded by several well-established sch
 
 ### 联系方式
 
-- 个人主页：http://jd92.wang
+- 个人主页：[http://jd92.wang](http://jd92.wang)
 - 知乎：[王晋东不在家](https://www.zhihu.com/people/jindongwang)
 - 微信公众号：[王晋东不在家](http://jd92.wang/assets/image/wechat_public_account.jpg)
 - B站：[王晋东不在家](https://space.bilibili.com/477087194)
