@@ -1,23 +1,21 @@
 ---
 layout: page
 permalink: /tlbook/
-title: Introduction to Transfer Learning
+title: Book
 nav: true
 ---
 
-
+The book **Introduction to Transfer Learning** written by Jindong Wang and Yiqiang Chen, is publised by [Springer Nature](https://link.springer.com/book/9789811975837) in 2023. 
 
 <img src = "/assets/img/tlbook-v1-cover.jpg" align = "right" width = "200" height="270">
 
 <img src = "/assets/img/tlbook-v2-cover.png" align = "right" width = "200" height="270">
 
-<img src = "/assets/img/tlbook-cover.png" align = "right" width = "200" height="270">
+<img src = "https://files.catbox.moe/bqfegt.png" align = "right" width = "200" height="270">
 
-By Jindong Wang and Yiqiang Chen, publised by [Springer Nature](https://link.springer.com/book/9789811975837) in 2023. [[Read](https://link.springer.com/book/9789811975837)]
+
 
 Click [here](#中文版) for [中文版](#中文版).
-
-
 - [English version](#english-version)
   - [Introduction](#introduction)
   - [Code](#code)
