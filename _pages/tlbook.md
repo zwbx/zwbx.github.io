@@ -21,7 +21,7 @@ Click [here](#中文版) for [中文版](#中文版).
   - [Code](#code)
   - [Figures](#figures)
   - [Suggestions and comments](#suggestions-and-comments)
-  - [Recommendations](#recommendations)
+  - [Endorsement](#endorsement)
   - [Contact and resources](#contact-and-resources)
 - [中文版](#中文版)
   - [介绍](#介绍)
@@ -51,7 +51,7 @@ Transfer learning is one of the most important technologies in the era of artifi
 
 This book offers a comprehensive tutorial on an overview of transfer learning, introducing new researchers in this area to both classic and more recent algorithms. Most importantly, it takes a “student’s” perspective to introduce all the concepts, theories, algorithms, and applications, allowing readers to quickly and easily enter this area. Accompanying the book, detailed code implementations are provided to better illustrate the core ideas of several important algorithms, presenting good examples for practice.
 
-Structure of this book is as follows. Click [HERE](https://www.jianguoyun.com/p/DSm27rYQjKnsBRjEr-4EIAA) for the detailed table of contents. Read or by it in [here](https://link.springer.com/book/9789811975837).
+Structure of this book is as follows. Click [HERE](https://www.jianguoyun.com/p/DSm27rYQjKnsBRjEr-4EIAA) for the detailed table of contents. Read or buy it in [here](https://link.springer.com/book/9789811975837).
 
 <img src="/assets/img/tlbook-framework.jpg" width="600">
 
@@ -68,7 +68,7 @@ Figures in this book is available in [here](https://www.jianguoyun.com/p/DeqZHLc
 
 Plese write your suggestions and feedbacks in [this page](https://github.com/jindongwang/transferlearning-tutorial/issues) by opening an issue.
 
-### Recommendations
+### Endorsement
 
 The Chinese version of this book is recommeneded by several well-established scholars such as Qiang Yang, Zhi-Hua Zhou, and many others. Read [here](#专家推荐意见) for their comments.
 
