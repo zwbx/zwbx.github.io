@@ -11,7 +11,7 @@ nav: true
 
 #### Preprints
 
-- On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective. **Jindong Wang**, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang, Wei Ye, Xiubo Geng, Binxin Jiao, Yue Zhang, Xing Xie. [[arxiv]([On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective](https://arxiv.org/abs/2302.12095))]
+- On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective. **Jindong Wang**, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang, Wei Ye, Xiubo Geng, Binxin Jiao, Yue Zhang, Xing Xie. [[arxiv](https://arxiv.org/abs/2302.12095)]
 - An Embarrassingly Simple Baseline for Imbalanced Semi-Supervised Learning. Hao Chen, Yue Fan, Yidong Wang, **Jindong Wang**, Bernt Schiele, Xing Xie, Marios Savvides, Bhiksha Raj. [[arxiv](https://arxiv.org/abs/2211.11086)] 
 - GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective. Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, **Jindong Wang**, Xing Xie, Yue Zhang. [[arxiv](https://arxiv.org/abs/2211.08073)]
 - Domain-Specific Risk Minimization for Out-of-Distribution Generalization. YiFan Zhang, **Jindong Wang**, Jian Liang, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, and Dacheng Tao. [[arxiv](https://arxiv.org/pdf/2208.08661.pdf)]
