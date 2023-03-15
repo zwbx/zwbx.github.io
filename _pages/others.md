@@ -9,11 +9,13 @@ nav: true
 
 Current interns:
 
-- 2022.10 -- present, Xixu Hu, Ph.D @ City University of Hong Kong.
-- 2022.07 -- present, Runkai Zheng, Master @ Chinese University of Hong Kong (Shenzhen).
+- 2023.03 -- present, Lu Tan, Master @ Tsinghua University.
+- 2023.03 -- present, Kaijie Zhu, Master @ Institute of Automation, CAS.
 
 Alumni:
 
+- 2022.10 -- 2023.03, Xixu Hu, Ph.D @ City University of Hong Kong.
+- 2022.07 -- 2023.03, Runkai Zheng, Master @ Chinese University of Hong Kong (Shenzhen).
 - 2021.11 -- 2022.10, [Yidong Wang](https://qianlanwyd.github.io/), Master @ Tokyo Institute of Technology. Now: starts his Ph.D in PKU. 
   - Topics: semi-supervised learning, long-tail learning.
   - Publications during internship: NeurIPS'22, ACML'22, COLING'22
