@@ -5,7 +5,10 @@ title: Projects
 nav: true
 ---
 
-<img src="../assets/img/research.png" style="width: 70%"/>
+
+<img src="../assets/img/research.png" style="width: 85%; display: block; margin: auto"/>
+
+
 
 1. Leading a pupular transfer learningresource projects on Github: [Transfer learning](https://github/jindongwang/transferlearning) [![Transfer learning repo](https://img.shields.io/github/stars/jindongwang/transferlearning?style=social)](https://github/jindongwang/transferlearning)
 2. USB: A unified semi-supervised learning toolbox for CV, NLP, and Audio: [USB](https://github.com/microsoft/Semi-supervised-learning) [![USB](https://img.shields.io/github/stars/microsoft/semi-supervised-learning?style=social)](https://img.shields.io/github/stars/microsoft/semi-supervised-learning)
