@@ -16,9 +16,9 @@ nav: true
   - IJCAI 2023 senior PC
   - AAAI 2023 senior PC
 - Conference PC member: 
-  - ML area: ICML (2022, 2021, 2020); NeurIPS (2022, 2021, 2020); ICLR (2023, 2022, 2021)
+  - ML area: ICML (2023, 2022, 2021, 2020); NeurIPS (2023, 2022, 2021, 2020); ICLR (2023, 2022, 2021)
   - AI area: AAAI (2022, 2021, 2020); IJCAI (2022)
-  - CV area: CVPR (2023, 2022, 2021); ICCV (2021); ECCV (2022)
+  - CV area: CVPR (2023, 2022, 2021); ICCV (2023, 2021); ECCV (2022)
   - DM area: KDD (2021); WWW (2023, 2022, 2021); SDM (2023, 2022); WSDM (2023)
   - HCI area: UbiComp/IMWUT (2022, 2021, 2020, 2019); CHI (2021, 2019); IEEE VAST (2020)
 - Journal reviewer: 
@@ -26,10 +26,11 @@ nav: true
 - Membership: 
   - Member of CCF technical committee pervasive computing (TCPC)
   - Member of human computer interaction (TCHCI)
-  - CCF member.
+  - CCF member
 
 #### Awards
 
+- Outstanding reviewer. NeurIPS 2022.
 - Innovation award. IJCAI federated learning workshop 2022.
 - Distinguished doctoral thesis award (中国科学院优秀博士学位论文奖) 2020.
 - Best Application Paper Award. IJCAI-19 Federated Machine Learning Workshop 2019.
