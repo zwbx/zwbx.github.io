@@ -7,11 +7,11 @@ nav: true
 
 The book **Introduction to Transfer Learning** written by Jindong Wang and Yiqiang Chen, is publised by [Springer Nature](https://link.springer.com/book/9789811975837) in 2023. 
 
-<img src = "/assets/img/tlbook-v1-cover.jpg" align = "right" width = "200" height="270">
+<img src = "https://wjdcloud.blob.core.windows.net/tools/tlbook-v1-cover.jpg" align = "right" width = "200" height="270">
 
-<img src = "/assets/img/tlbook-v2-cover.png" align = "right" width = "200" height="270">
+<img src = "https://wjdcloud.blob.core.windows.net/tools/tlbook-v2-cover.png" align = "right" width = "200" height="270">
 
-<img src = "https://files.catbox.moe/bqfegt.png" align = "right" width = "200" height="270">
+<img src = "https://wjdcloud.blob.core.windows.net/tools/%E8%8B%B1%E6%96%87%E7%89%88%E5%B0%81%E9%9D%A2.jpg" align = "right" width = "200" height="270">
 
 
 
@@ -53,7 +53,7 @@ This book offers a comprehensive tutorial on an overview of transfer learning, i
 
 Structure of this book is as follows. Click [HERE](https://www.jianguoyun.com/p/DSm27rYQjKnsBRjEr-4EIAA) for the detailed table of contents. Read or buy it in [here](https://link.springer.com/book/9789811975837).
 
-<img src="/assets/img/tlbook-framework.jpg" width="600">
+<img src="https://wjdcloud.blob.core.windows.net/tools/tlbook-framework.jpg" width="600">
 
 
 ### Code
@@ -62,7 +62,7 @@ Accompanying code is on Github: [https://github.com/jindongwang/tlbook-code](htt
 
 ### Figures
 
-Figures in this book is available in [here](https://www.jianguoyun.com/p/DeqZHLcQjKnsBRjbr-4EIAA) (access code: a7zmf7). Feel free to use them for your own research.
+Figures in this book are available in [here](https://www.jianguoyun.com/p/DeqZHLcQjKnsBRjbr-4EIAA) (access code: a7zmf7). Feel free to use them for your own research.
 
 ### Suggestions and comments
 
@@ -97,7 +97,7 @@ The Chinese version of this book is recommeneded by several well-established sch
 
 下图为本书结构。点击[这里](https://www.jianguoyun.com/p/DcdPeVoQjKnsBRjQmdAEIAA)看完整目录。[第一版目录](https://www.jianguoyun.com/p/DVQTcAgQjKnsBRjWvIAE)
 
-<img src = "/assets/img/tlbook-framework-cn.png" width = "600">
+<img src = "https://wjdcloud.blob.core.windows.net/tools/tlbook-framework-cn.png" width = "600">
 
 ### 代码
 
