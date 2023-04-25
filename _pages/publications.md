@@ -7,13 +7,11 @@ years: [2023, 2022, 2021, 2020, 2019, 2018, 2017, 2016]
 nav: true
 ---
 
-[[Google scholar](https://scholar.google.com/citations?user=hBZ_tKsAAAAJ)] | [[DBLP](https://dblp.org/pid/19/2969-1.html)]
+[[Google scholar](https://scholar.google.com/citations?user=hBZ_tKsAAAAJ)] | [[DBLP](https://dblp.org/pid/19/2969-1.html)] | [[View by topic](https://jd92.wang/research/)]
 
 #### Preprints
 
 - Exploring Vision-Language Models for Imbalanced Learning. Yidong Wang, Zhuohao Yu, **Jindong Wang**, Qiang Heng, Hao Chen, Wei Ye, Rui Xie, Xing Xie, Shikun Zhang. [[arxiv](https://arxiv.org/abs/2304.01457)] [[code](https://github.com/Imbalance-VLM/Imbalance-VLM)]
-- FedCLIP: Fast Generalization and Personalization for CLIP in Federated Learning. Wang Lu, Xixu Hu, **Jindong Wang**, Xing Xie. [[arxiv](https://arxiv.org/abs/2302.13485v1)]
-- On the Robustness of ChatGPT: An Adversarial and Out-of-distribution Perspective. **Jindong Wang**, Xixu Hu, Wenxin Hou, Hao Chen, Runkai Zheng, Yidong Wang, Linyi Yang, Haojun Huang, Wei Ye, Xiubo Geng, Binxin Jiao, Yue Zhang, Xing Xie. [[arxiv](https://arxiv.org/abs/2302.12095)]
 - An Embarrassingly Simple Baseline for Imbalanced Semi-Supervised Learning. Hao Chen, Yue Fan, Yidong Wang, **Jindong Wang**, Bernt Schiele, Xing Xie, Marios Savvides, Bhiksha Raj. [[arxiv](https://arxiv.org/abs/2211.11086)] 
 - GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective. Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, **Jindong Wang**, Xing Xie, Yue Zhang. [[arxiv](https://arxiv.org/abs/2211.08073)]
 - FIXED: Frustratingly Easy Domain Generalization with Mixup. Wang Lu, **Jindong Wang**, Han Yu, Lei Huang, Xiang Zhang, Yiqiang Chen, Xing Xie. [[arxiv](https://arxiv.org/abs/2211.05228)]
