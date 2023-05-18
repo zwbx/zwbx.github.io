@@ -16,7 +16,9 @@ Our research consists of the following topics with selected publications: [[View
 ##### Out-of-distribution (Domain) generalization and adaptation for distribution shift
 
 - **[ICLR'23]** [Out-of-distribution Representation Learning for Time Series Classification](https://arxiv.org/abs/2209.07027). Wang Lu, Jindong Wang, Xinwei Sun, Yiqiang Chen, and Xing Xie.
-- **[ACL'23 findings]** [GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective](https://arxiv.org/abs/2211.08073). Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, **Jindong Wang**, Xing Xie, Yue Zhang.
+- **[KDD'23]** [Domain-Specific Risk Minimization for Out-of-Distribution Generalization](https://arxiv.org/pdf/2208.08661.pdf). YiFan Zhang, Jindong Wang, Jian Liang, Zhang Zhang, Baosheng Yu, Liang Wang, Xing Xie, and Dacheng Tao.
+- **[KDD'23]** [Generalizable Low-Resource Activity Recognition with Diverse and Discriminative Representation Learning](ddd). Xin Qin, Jindong Wang, Shuo Ma, Wang Lu, Yongchun Zhu, Xing Xie, Yiqiang Chen.
+- **[ACL'23 findings]** [GLUE-X: Evaluating Natural Language Understanding Models from an Out-of-distribution Generalization Perspective](https://arxiv.org/abs/2211.08073). Linyi Yang, Shuibai Zhang, Libo Qin, Yafu Li, Yidong Wang, Hanmeng Liu, Jindong Wang, Xing Xie, Yue Zhang.
 - **[TKDE'22]** [Generalizing to Unseen Domains: A Survey on Domain Generalization](https://arxiv.org/abs/2103.03097). Jindong Wang, Cuiling Lan, Chang Liu, Yidong Ouyang, Tao Qin, Wang Lu, Yiqiang Chen, Wenjun Zeng, and Philip S. Yu.
 - **[TMLR'22]** [Domain-invariant Feature Exploration for Domain Generalization](https://arxiv.org/abs/2207.12020). Wang Lu, Jindong Wang, Haoliang Li, Yiqiang Chen, and Xing Xie.
 - **[UbiComp'22]** [Semantic-Discriminative Mixup for Generalizable Sensor-based Cross-domain Activity Recognition](http://arxiv.org/abs/2206.06629). Wang Lu, Jindong Wang, Yiqiang Chen, Sinno Pan, Chunyu Hu, and Xin Qin.
