@@ -2,7 +2,7 @@
 layout: page
 permalink: /tlbook/
 title: Book
-nav: true
+nav: false
 ---
 
 The book **Introduction to Transfer Learning** written by Jindong Wang and Yiqiang Chen, is publised by [Springer Nature](https://link.springer.com/book/9789811975837) in 2023. 
