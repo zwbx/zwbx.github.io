@@ -14,7 +14,7 @@ footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🐼 # the emoji used as the favicon
+icon: 🐶 # the emoji used as the favicon
 url: https://zwbx.github.io # the base hostname & protocol for your site
 baseurl: # zwbx.github.io # the subpath of your site, e.g. /blog/
 last_updated: true # set to true if you want to display last updated in the footer
