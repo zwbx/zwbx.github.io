@@ -2,7 +2,7 @@
 layout: page
 title: Service
 permalink: /service/
-nav: true
+nav: false
 ---
 
 #### Academic service
