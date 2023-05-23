@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: 
 years: [2022, 2021]
-nav: true
+nav: false
 ---
 
 [[Google scholar](https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ)]
