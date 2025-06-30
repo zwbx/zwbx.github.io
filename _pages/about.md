@@ -17,7 +17,7 @@ social: true  # includes social icons at the bottom of the page
 Second year Ph.D. student in University of Adelaide <br>
 Adelaide, South Australia 5005 Australia<br>
 wenbo.zhang01 [at] adelaide.edu.au <br>
-[Google scholar](https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ) | [Github](https://github.com/zwbx) | [Resume](https://) 
+[Google scholar](https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ) | [Github](https://github.com/zwbx) 
 
 I'm a first year Ph.D. student at the University of Adelaide, where I am working with [Lingqiao Liu](https://scholar.google.com/citations?user=Y2xu62UAAAAJ&hl). Previously, I worked with Prof. [Yifan Liu](https://scholar.google.com/citations?user=ksQ4JnQAAAAJ&hl). In June 2022, I obtained my master's degree from Sichuan University, supervised by Prof. [Keren Fu](http://www.kerenfu.top/). Before my postgraduate studies, I received my bachelor's degree from Sichuan University.
 
