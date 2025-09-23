@@ -139,18 +139,7 @@ keep_files:
 
 # Plug-ins
 plugins:
-  # - jekyll-archives
-  # - jekyll-diagrams
-  # - jekyll-email-protect
-  # - jekyll-feed
-  # - jekyll-github-metadata
-  # - jekyll-paginate-v2
-  - jekyll-responsive-image
   - jekyll/scholar
-  # - jekyll-sitemap
-  # - jekyll-target-blank
-  # - jekyll-twitter-plugin
-  # - jemoji
 
 # Sitemap settings
 defaults:
