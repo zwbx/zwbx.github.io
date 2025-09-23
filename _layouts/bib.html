@@ -1,7 +1,7 @@
 ---
 ---
 
-<!-- <div class="row"> -->
+<div class="row" style="margin-bottom: 2rem; align-items: flex-start;">
   <!-- <div class="col-sm-1 abbr">
   {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}
@@ -12,7 +12,14 @@
   {% endif %}
   </div> -->
 
-  <div id="{{entry.key}}" class="col-sm-8" style="max-width: 100%;">
+  {% if entry.preview %}
+    <div class="col-sm-3" style="padding-right: 1rem;">
+      <img src="{{ entry.preview | prepend: '/assets/img/' | relative_url }}" class="img-fluid rounded z-depth-1" alt="{{ entry.title }}" style="width: 100%; height: auto; object-fit: contain;">
+    </div>
+    <div id="{{entry.key}}" class="col-sm-9">
+  {% else %}
+    <div id="{{entry.key}}" class="col-sm-12">
+  {% endif %}
     {% if entry.type == "thesis" %}
       {{reference}}
     {% else %}
@@ -172,4 +179,4 @@
     </div>
     {% endif %}
   </div>
-<!-- </div> -->
+</div>
