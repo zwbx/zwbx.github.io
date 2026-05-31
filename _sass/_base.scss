@@ -569,3 +569,37 @@ html.transition *:after {
   font-size: 0.875rem;
   padding-top: 0.25rem;
 }
+
+.rvss-gallery {
+  text-align: center;
+
+  img {
+    width: 85%;
+    max-width: 960px;
+    margin-bottom: 0.5rem;
+  }
+
+  em {
+    display: block;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.rvss-video {
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  video {
+    width: 85%;
+    max-width: 960px;
+  }
+}
+
+.rvss-section-divider {
+  border: 0;
+  border-top: 1px solid var(--global-divider-color);
+  margin: 2.5rem auto;
+  max-width: 960px;
+}
