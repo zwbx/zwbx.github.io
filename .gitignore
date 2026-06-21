@@ -7,3 +7,9 @@ _site
 .ruby-version
 .tweet-cache
 vendor
+.superpowers/
+
+# Local screenshot / debug artifacts
+verify_*.png
+verify_*.html
+zztmp_*

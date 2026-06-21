@@ -1,0 +1,28 @@
+# Experience catalog (§01). code = period.
+# TODO(verify): confirm exact start/end years for SenseTime, Shanghai AI Lab, and MSc.
+- code: "2025 –"
+  title: ByteDance Seed
+  sub: 'Research Intern · Beijing, CN · mentor: <a href="https://yusufma03.github.io/" target="_blank" rel="noopener">Xiao Ma</a>'
+  tag: Industry
+  url: https://seed.bytedance.com/
+
+- code: "2023 –"
+  title: University of Adelaide · AIML
+  sub: "Ph.D. Candidate · Adelaide, AU"
+  tag: PhD
+  url: https://www.adelaide.edu.au/aiml/
+
+- code: "2022"
+  title: Shanghai AI Laboratory
+  sub: "Research Intern · Shanghai, CN"
+  tag: Industry
+
+- code: "2021 – 2022"
+  title: SenseTime Research
+  sub: "Research Intern · CN"
+  tag: Industry
+
+- code: "2019 – 2022"
+  title: Sichuan University
+  sub: "M.Eng., Computer Science · Chengdu, CN"
+  tag: MSc

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ site.first_name }} {{ site.last_name }}{% if page.role %} — {{ page.role }}{% endif %}</title>
+  <meta name="description" content="{{ page.meta_description | default: 'Wenbo Zhang — Ph.D. Candidate in Embodied AI and Robotic Manipulation.' }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.first_name }} {{ site.last_name }}">
+  <meta property="og:description" content="{{ page.meta_description | default: 'Ph.D. Candidate in Embodied AI and Robotic Manipulation.' }}">
+  <meta property="og:url" content="{{ '/' | absolute_url }}">
+  {% if page.photo %}<meta property="og:image" content="{{ page.photo | prepend: '/assets/img/' | absolute_url }}">{% endif %}
+
+  {% if site.icon != empty %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
+  {% endif %}
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/ce.css' | relative_url }}">
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+</head>
+
+<body>
+
+  <!-- ===================== TOP NAV ===================== -->
+  <nav class="ce-nav">
+    <div class="ce-nav__inner">
+      <a class="ce-nav__name" href="#top">{{ site.first_name }} <b>{{ site.last_name }}</b></a>
+      <ul class="ce-nav__index">
+        <li><a class="ce-nav__link" href="#research">Research</a></li>
+        <li><a class="ce-nav__link" href="#work">Experience</a></li>
+        <li><a class="ce-nav__link" href="#service">Service</a></li>
+        <li><a class="ce-nav__link" href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===================== TICKER ===================== -->
+  {% assign ticker = "Embodied AI,ByteDance Seed,Adelaide AIML,SenseTime,Shanghai AI Lab,RVSS 1st,ICCV-VCL Organizer,Robotic Manipulation,Chain-of-Action,Self-improving Agents" | split: "," %}
+  <div class="ce-ticker" aria-hidden="true">
+    <div class="ce-ticker__track">
+      {% for t in ticker %}<span>{{ t }}</span><span class="ce-ticker__sep">·</span>{% endfor %}
+      {% for t in ticker %}<span>{{ t }}</span><span class="ce-ticker__sep">·</span>{% endfor %}
+    </div>
+  </div>
+
+  <main class="ce-wrap" id="top">
+
+    <!-- ===================== SLIM IDENTITY ===================== -->
+    <header class="ce-hero ce-hero--slim">
+      <div class="ce-hero__id">
+        <h1 class="ce-hero__name">{{ site.first_name }} {{ site.last_name }}<span class="dot">.</span></h1>
+        {% if page.role %}<p class="ce-hero__role">{{ page.role }}</p>{% endif %}
+        {% if page.now %}
+        <div class="ce-status ce-status--now">
+          <span class="ce-status__label">Now</span>
+          {% for n in page.now %}<span class="ce-status__line">{{ n }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        {% if site.data.links %}
+        <ul class="ce-links">
+          {% for l in site.data.links %}
+          <li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}><b>{{ l.label }}</b>{% if l.text %} {{ l.text }}{% endif %}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </div>
+      {% if page.photo %}
+      <figure class="ce-photo ce-photo--slim{% if page.photo_hover %} ce-photo--swap{% endif %}"{% if page.photo_hover %} tabindex="0" title="Hover to reveal" aria-label="{{ site.first_name }} {{ site.last_name }}"{% endif %}>
+        <img class="ce-photo__base" src="{{ page.photo | prepend: '/assets/img/' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">
+        {% if page.photo_hover %}<img class="ce-photo__hover" src="{{ page.photo_hover | prepend: '/assets/img/' | relative_url }}" alt="" aria-hidden="true">{% endif %}
+      </figure>
+      {% endif %}
+    </header>
+
+    <!-- ===================== §01 RESEARCH ===================== -->
+    <section class="ce-sec" id="research">
+      <div class="ce-sechead">
+        <h2 class="ce-sechead__title">Research</h2>
+      </div>
+      <p class="ce-research__lead">Building physical agents<span class="ce-why" tabindex="0" role="note" aria-label="Why not virtual agents?"><span class="ce-why__mark">?</span><span class="ce-why__pop"><b>Why not virtual agents?</b> Sadly, I believe that space is &mdash; and will increasingly be &mdash; rapidly converging under the digital hegemony of a few big companies.</span></span> that self-improve through experience.</p>
+      <p class="ce-research__body">{{ page.research_body | default: "I work on embodied AI and robotic manipulation — toward autonomous systems that learn from their own experience and help with everyday tasks, without a human in the loop." }}</p>
+      {% if site.data.research_tags %}
+      <ul class="ce-tags">
+        {% for tag in site.data.research_tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+
+      <!-- the research arc: ideal framework -> today's realization (data flywheel) -->
+      <div class="ce-arc">
+        <p class="ce-arc__cap"><b>The Ideal</b> &mdash; an embodied analogue of the three-stage recipe behind GPT</p>
+
+        <div class="ce-arc__row">
+          <div class="ce-ideal">
+            <div class="ce-ideal__no">01</div>
+            <div class="ce-ideal__name">Native Multimodal Pretraining</div>
+            <div class="ce-ideal__gpt">&asymp; pretraining &middot; compress knowledge</div>
+          </div>
+          <div class="ce-arc__arrow">&rarr;</div>
+          <div class="ce-ideal">
+            <div class="ce-ideal__no">02</div>
+            <div class="ce-ideal__name">Policy Extraction</div>
+            <div class="ce-ideal__gpt">&asymp; post-training &middot; extract knowledge</div>
+          </div>
+          <div class="ce-arc__arrow">&rarr;</div>
+          <div class="ce-ideal">
+            <div class="ce-ideal__no">03</div>
+            <div class="ce-ideal__name">Align with Real-World</div>
+            <div class="ce-ideal__gpt">&asymp; alignment &middot; to the final goal</div>
+          </div>
+        </div>
+
+        <div class="ce-arc__down">
+          <div class="ce-arc__down-label">A journey of a thousand miles begins with a single step <span class="ce-arc__down-sep">|</span> 千里之行，始于足下</div>
+          <div class="ce-arc__down-line"></div>
+          <div class="ce-arc__down-arrow"></div>
+        </div>
+
+        <div class="ce-arc__row">
+          <div class="ce-stage" data-pub="01" tabindex="0">
+            <div class="ce-stage__no">01 / Training</div>
+            <div class="ce-stage__method">Action Modeling</div>
+            <div class="ce-stage__paper">Chain-of-Action</div>
+          </div>
+          <div class="ce-arc__arrow">&rarr;</div>
+          <div class="ce-stage" data-pub="02" tabindex="0">
+            <div class="ce-stage__no">02 / Post-Training</div>
+            <div class="ce-stage__method">SFT Strategies</div>
+            <div class="ce-stage__paper">Effective Tuning</div>
+          </div>
+          <div class="ce-arc__arrow">&rarr;</div>
+          <div class="ce-stage" data-pub="03" tabindex="0">
+            <div class="ce-stage__no">03 / Deployment</div>
+            <div class="ce-stage__method">Test-Time Training</div>
+            <div class="ce-stage__paper">TTT-VLA</div>
+          </div>
+        </div>
+
+        <div class="ce-scope__flywheel">
+          <span class="ce-scope__dot"></span>
+          <span class="ce-scope__flywheel-label">&#8635; Data Flywheel</span>
+        </div>
+        <div class="ce-scope__mobilenote">&#8635; closes the data flywheel &rarr; training</div>
+
+        {% if site.data.publications %}
+        <div class="ce-pubview" id="pubs">
+          <span class="ce-pubview__hint" aria-hidden="true">Hover a stage &uarr;</span>
+          {% for pub in site.data.publications %}
+          <article class="ce-pubview__item" data-pub="{{ pub.stage_no }}">
+            {% if pub.stage_phase %}<div class="ce-pub__stage"><b>{{ pub.stage_no }} {{ pub.stage_phase }}</b> &middot; {{ pub.stage_method }}</div>{% endif %}
+            <div class="ce-pub__venue">{{ pub.venue }} <span class="yr">/ {{ pub.year }}</span></div>
+            <h3 class="ce-pub__title">{{ pub.title }}</h3>
+            <p class="ce-pub__authors">{{ pub.authors | replace: 'Wenbo Zhang', '<span class="self">Wenbo Zhang</span>' }}</p>
+            {% if pub.links %}
+            <div class="ce-pub__links">
+              {% for link in pub.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}
+            </div>
+            {% endif %}
+          </article>
+          {% endfor %}
+        </div>
+        <p class="ce-pub__more">→ <a href="{{ '/publications/' | relative_url }}">Full publication list</a> · <a href="https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ" target="_blank" rel="noopener">Google Scholar</a></p>
+        {% endif %}
+      </div>
+    </section>
+
+    <!-- ===================== PROFILE / CV DIVIDER ===================== -->
+    <div class="ce-groupdiv"><span class="ce-groupdiv__label">Profile / CV</span></div>
+
+    <!-- ===================== §02 EXPERIENCE ===================== -->
+    {% if site.data.experience %}
+    <section class="ce-sec" id="work">
+      <div class="ce-sechead">
+        <h2 class="ce-sechead__title">Experience</h2>
+      </div>
+      {% for e in site.data.experience %}
+      <div class="ce-entry">
+        <div class="ce-entry__main">
+          <div class="ce-entry__title">{% if e.url %}<a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.title }}</a>{% else %}{{ e.title }}{% endif %}</div>
+          {% if e.sub %}<div class="ce-entry__sub">{{ e.sub }}</div>{% endif %}
+        </div>
+        <div class="ce-entry__meta">
+          <span class="ce-entry__year">{{ e.code }}</span>
+          {% if e.tag %}<span class="ce-entry__tag">{{ e.tag }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    <!-- ===================== §03 SERVICE & TALKS ===================== -->
+    {% if site.data.service %}
+    <section class="ce-sec" id="service">
+      <div class="ce-sechead">
+        <h2 class="ce-sechead__title">Service &amp; Talks</h2>
+      </div>
+      {% for s in site.data.service.entries %}
+      <div class="ce-entry">
+        <div class="ce-entry__main">
+          <div class="ce-entry__title">{{ s.title }}</div>
+          {% if s.sub %}<div class="ce-entry__sub">{{ s.sub }}</div>{% endif %}
+          {% if s.links %}
+          <div class="ce-pub__links" style="margin-top:8px;">
+            {% for link in s.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>{% endfor %}
+          </div>
+          {% endif %}
+        </div>
+        <div class="ce-entry__meta">
+          <span class="ce-entry__year">{{ s.code }}</span>
+          {% if s.tag %}<span class="ce-entry__tag">{{ s.tag }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+      {% if site.data.service.reviewing %}
+      <div style="margin-top:22px;">
+        <div class="ce-entry__sub" style="margin-bottom:10px;">CONFERENCE / JOURNAL REVIEWER</div>
+        <ul class="ce-tags">
+          {% for v in site.data.service.reviewing %}<li>{{ v }}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    </section>
+    {% endif %}
+
+    <!-- ===================== §04 AWARDS ===================== -->
+    {% if site.data.awards %}
+    <section class="ce-sec" id="awards">
+      <div class="ce-sechead">
+        <h2 class="ce-sechead__title">Awards</h2>
+      </div>
+      {% for a in site.data.awards %}
+      <div class="ce-entry">
+        <div class="ce-entry__main">
+          <div class="ce-entry__title">{{ a.title }}</div>
+          {% if a.sub %}<div class="ce-entry__sub">{{ a.sub }}</div>{% endif %}
+          {% if a.url %}
+          <div class="ce-pub__links" style="margin-top:8px;">
+            <a href="{{ a.url }}">Details</a>
+          </div>
+          {% endif %}
+        </div>
+        <div class="ce-entry__meta">
+          <span class="ce-entry__year">{{ a.code }}</span>
+          {% if a.tag %}<span class="ce-entry__tag">{{ a.tag }}</span>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="ce-foot">
+    <div class="ce-wrap">
+      <div class="ce-foot__grid">
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
+        <span>
+          <a href="https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ" target="_blank" rel="noopener">Scholar</a> ·
+          <a href="https://github.com/zwbx" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://x.com/_wenbozhang" target="_blank" rel="noopener">X</a>
+        </span>
+        {% if site.last_updated %}<span>Last updated {{ "now" | date: '%b %Y' }}</span>{% endif %}
+      </div>
+      <p class="ce-foot__colophon">Type: Newsreader / IBM Plex Mono · Built with Jekyll · System-catalog layout</p>
+    </div>
+  </footer>
+
+  <!-- research arc: auto-cycle the stage cards; pauses on hover/focus, off when reduced-motion -->
+  <script>
+  (function () {
+    var arc = document.querySelector('.ce-arc');
+    if (!arc) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!window.matchMedia('(hover: hover)').matches) return;
+
+    var stages = ['01', '02', '03'];
+    var i = 0;
+    var timer = null;
+
+    function render() { arc.setAttribute('data-active', stages[i]); }
+    function advance() { i = (i + 1) % stages.length; render(); }
+    function start() { if (!timer) timer = window.setInterval(advance, 3200); }
+    function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
+
+    render();
+    start();
+
+    arc.addEventListener('mouseenter', stop);
+    arc.addEventListener('mouseleave', start);
+    arc.addEventListener('focusin', stop);
+    arc.addEventListener('focusout', function (e) {
+      if (!arc.contains(e.relatedTarget)) start();
+    });
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) stop(); else start();
+    });
+  })();
+  </script>
+
+  <!-- Baidu analytics -->
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?29274d0e68415cd4179a801ea4abf7cb";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+
+</body>
+</html>

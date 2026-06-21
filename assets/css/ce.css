@@ -1,0 +1,866 @@
+/* =============================================================
+   CE — Cav Empt inspired academic homepage
+   Warm-neutral "system catalog" theme. Standalone (no Bootstrap).
+   ============================================================= */
+
+:root {
+  --paper:   #efece4;  /* warm greige base            */
+  --paper-2: #e7e3d8;  /* slightly deeper panel       */
+  --ink:     #211e18;  /* warm near-black             */
+  --meta:    #827b6c;  /* warm gray, secondary text   */
+  --soft:    #d4cec1;  /* hairline rules              */
+  --accent:  #955a4b;  /* muted terracotta, "whisper" */
+  --accent-fg:#f4ece0;
+
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --mono:  "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --wrap: 940px;
+  --nav-h: 52px;
+}
+
+/* ---------- reset / base ---------- */
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--accent); color: var(--accent-fg); }
+
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--accent); }
+
+img { max-width: 100%; display: block; }
+
+.ce-wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.mono { font-family: var(--mono); }
+
+/* ---------- top nav ---------- */
+.ce-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: saturate(1.1) blur(8px);
+  border-bottom: 1px solid var(--soft);
+}
+.ce-nav__inner {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 28px;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+.ce-nav__name {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ce-nav__name b { color: var(--accent); }
+.ce-nav__index {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.ce-nav__index::-webkit-scrollbar { display: none; }
+.ce-nav__link {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--meta);
+  white-space: nowrap;
+  padding: 4px 0;
+  border-bottom: 1px solid transparent;
+}
+.ce-nav__link:hover { color: var(--ink); border-bottom-color: var(--accent); }
+
+/* ---------- ticker ---------- */
+.ce-ticker {
+  overflow: hidden;
+  border-bottom: 1px solid var(--soft);
+  background: var(--paper);
+}
+.ce-ticker__track {
+  display: inline-flex;
+  white-space: nowrap;
+  padding: 7px 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--meta);
+  animation: ce-marq 46s linear infinite;
+  will-change: transform;
+}
+.ce-ticker__track span { padding: 0 .9em; }
+.ce-ticker__sep { color: var(--accent); }
+@keyframes ce-marq {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ---------- hero ---------- */
+.ce-hero {
+  display: grid;
+  grid-template-columns: 1fr 232px;
+  gap: 40px;
+  padding: 56px 0 40px;
+  align-items: start;
+}
+.ce-hero__name {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 1.02;
+  letter-spacing: -.015em;
+  margin: 0 0 14px;
+}
+.ce-hero__name .dot { color: var(--accent); }
+.ce-hero__role {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.ce-status {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--meta);
+  border-left: 2px solid var(--accent);
+  padding: 2px 0 2px 12px;
+  margin: 0 0 22px;
+}
+.ce-status b { color: var(--ink); font-weight: 600; }
+/* multi-line NOW block (slim hero) — reuses the .ce-status accent rail */
+.ce-status--now {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.45;
+}
+.ce-status__label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+.ce-status__line { color: var(--ink); }
+.ce-bio {
+  font-size: 18px;
+  max-width: 46ch;
+  margin: 0 0 24px;
+}
+.ce-bio p { margin: 0 0 .8em; }
+.ce-bio a { box-shadow: inset 0 -1px 0 var(--accent); }
+.ce-bio a:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+
+.ce-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ce-links a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  border: 1px solid var(--soft);
+  padding: 6px 10px;
+  color: var(--meta);
+  min-width: 0;            /* allow the flex item to shrink ... */
+  overflow-wrap: anywhere; /* ... so the long email address can break on narrow screens */
+}
+.ce-links a:hover { border-color: var(--accent); color: var(--ink); }
+.ce-links a b { color: var(--accent); font-weight: 600; }
+
+/* profile photo — warm duotone */
+.ce-photo { margin: 4px 0 0; position: relative; }
+.ce-photo img {
+  width: 100%;
+  border: 1px solid var(--ink);
+}
+.ce-photo figcaption {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin-top: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* slim identity header — research-first layout */
+.ce-hero--slim {
+  grid-template-columns: minmax(0, 1fr) auto; /* minmax(0,..) lets the id column actually shrink */
+  align-items: start;        /* top-align the photo with the (now taller) id column */
+  padding: 26px 0 16px;
+}
+.ce-hero__id { min-width: 0; }
+.ce-hero--slim .ce-hero__name { font-size: 42px; margin: 0 0 6px; }
+.ce-hero--slim .ce-hero__role { margin: 0 0 10px; }
+.ce-hero--slim .ce-status--now { margin-bottom: 14px; }
+.ce-photo--slim { width: 96px; margin: 0; }
+.ce-photo--slim img { width: 96px; height: 96px; object-fit: cover; object-position: center 30%; }
+
+/* hover-swap photo: pixel-art base, real photo cross-fades in on hover/focus */
+.ce-photo--swap { cursor: pointer; }
+.ce-photo--swap .ce-photo__hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+.ce-photo--swap:hover .ce-photo__hover,
+.ce-photo--swap:focus-within .ce-photo__hover { opacity: 1; }
+.ce-photo--swap:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* understated corner tick hinting the photo is interactive; fades once revealed */
+.ce-photo--swap::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 9px;
+  height: 9px;
+  border-right: 1.5px solid var(--accent);
+  border-bottom: 1.5px solid var(--accent);
+  opacity: .65;
+  transition: opacity .3s ease;
+  pointer-events: none;
+}
+.ce-photo--swap:hover::after,
+.ce-photo--swap:focus-within::after { opacity: 0; }
+
+/* ---------- section header ---------- */
+.ce-sec { padding: 30px 0; scroll-margin-top: calc(var(--nav-h) + 8px); }
+.ce-sec + .ce-sec { border-top: 1px solid var(--soft); }
+#research { padding-top: 12px; padding-bottom: 18px; }
+
+/* group divider — opens the personal/CV block after Research */
+.ce-groupdiv {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 6px 0;
+}
+.ce-groupdiv::before,
+.ce-groupdiv::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--soft);
+}
+.ce-groupdiv__label {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--meta);
+  white-space: nowrap;
+}
+.ce-sechead {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 0 0 14px;
+}
+.ce-sechead__title {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* ---------- catalog entry (experience / awards) ---------- */
+.ce-entry {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 24px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-top: 1px solid var(--soft);
+}
+.ce-entry:last-child { border-bottom: 1px solid var(--soft); }
+.ce-entry__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  text-align: right;
+}
+.ce-entry__year {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: .04em;
+  color: var(--meta);
+  white-space: nowrap;
+}
+.ce-entry__title {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+.ce-entry__title a { box-shadow: inset 0 -1px 0 transparent; }
+.ce-entry__title a:hover { box-shadow: inset 0 -1px 0 var(--accent); }
+.ce-entry__sub {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  letter-spacing: .02em;
+  color: var(--meta);
+  margin-top: 4px;
+}
+.ce-entry__tag {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--meta);
+  border: 1px solid var(--soft);
+  padding: 3px 8px;
+  white-space: nowrap;
+}
+
+/* ---------- research ---------- */
+.ce-research__lead {
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.45;
+  font-weight: 400;
+  max-width: 36ch;
+  margin: 0 0 8px;
+}
+.ce-research__body { max-width: 60ch; color: var(--ink); margin: 0 0 14px; }
+
+/* inline "?" affordance — expands a short aside (why physical, not virtual) */
+.ce-why {
+  position: relative;
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 3px;
+  cursor: help;
+  outline: none;
+}
+.ce-why__mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--accent);
+  transition: background .18s ease, color .18s ease;
+}
+.ce-why:hover .ce-why__mark,
+.ce-why:focus .ce-why__mark,
+.ce-why:focus-within .ce-why__mark {
+  background: var(--accent);
+  color: var(--paper);
+}
+.ce-why__pop {
+  position: absolute;
+  top: calc(100% + 9px);
+  left: 0;
+  z-index: 30;
+  width: max-content;
+  max-width: 340px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, .12);
+  padding: 12px 14px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.55;
+  letter-spacing: .01em;
+  text-transform: none;
+  color: var(--ink);
+  vertical-align: baseline;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+}
+.ce-why__pop b {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  font-size: 10.5px;
+  color: var(--accent);
+}
+.ce-why__pop::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background: var(--paper);
+  border-left: 1px solid var(--ink);
+  border-top: 1px solid var(--ink);
+  transform: rotate(45deg);
+}
+.ce-why:hover .ce-why__pop,
+.ce-why:focus .ce-why__pop,
+.ce-why:focus-within .ce-why__pop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.ce-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+.ce-tags li { white-space: nowrap; }
+.ce-tags li:not(:last-child)::after {
+  content: "·";
+  color: var(--accent);
+  margin: 0 .6em;
+}
+
+/* ---------- research arc: ideal framework -> realization ---------- */
+.ce-arc { margin: 16px 0 4px; }
+.ce-arc__cap {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin: 0 0 10px;
+}
+.ce-arc__cap b { color: var(--accent); }
+.ce-arc__row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+}
+.ce-arc__arrow {
+  align-self: center;
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 16px;
+  padding: 0 14px;
+}
+
+/* ideal (blueprint) cards — dashed */
+.ce-ideal {
+  border: 1px dashed var(--accent);
+  border-radius: 2px;
+  padding: 11px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ce-ideal__no {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ce-ideal__name { font-family: var(--serif); font-size: 18px; line-height: 1.22; }
+.ce-ideal__gpt {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+/* down connector: ideal -> today's realization */
+.ce-arc__down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 10px 0 8px;
+}
+.ce-arc__down-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--meta);
+  text-align: center;
+  max-width: 100%;
+  line-height: 1.6;
+}
+.ce-arc__down-sep { color: var(--accent); margin: 0 .35em; font-weight: 400; }
+/* margin restores the label gap (flex gap is 0 so the line meets the arrow base flush);
+   height absorbs the removed line/arrow gap so the arrow tip keeps its position */
+.ce-arc__down-line { width: 1.5px; height: 21px; background: var(--accent); margin-top: 5px; }
+.ce-arc__down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 10px solid var(--accent);
+}
+
+/* realized (current) cards — solid */
+.ce-stage {
+  border: 1px solid var(--soft);
+  background: color-mix(in srgb, var(--paper-2) 55%, transparent);
+  padding: 12px 15px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  transition: border-color .18s ease, background .18s ease, box-shadow .18s ease;
+}
+/* active stage = the auto-cycled one (JS sets data-active), the hovered/focused
+   one, or the first by default when JS is inactive (reduced-motion / no JS).
+   This also drives the linked paper reveal below (see .ce-pubview). */
+.ce-arc[data-active="01"] .ce-stage[data-pub="01"],
+.ce-arc[data-active="02"] .ce-stage[data-pub="02"],
+.ce-arc[data-active="03"] .ce-stage[data-pub="03"],
+.ce-arc:not([data-active]) .ce-stage[data-pub="01"],
+.ce-stage:hover,
+.ce-stage:focus-within {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+/* hover/focus wins over the auto-cycle: dim the auto-active stage while another is engaged */
+.ce-arc:has(.ce-stage:hover) .ce-stage:not(:hover),
+.ce-arc:has(.ce-stage:focus-within) .ce-stage:not(:focus-within) {
+  border-color: var(--soft);
+  background: color-mix(in srgb, var(--paper-2) 55%, transparent);
+  box-shadow: none;
+}
+.ce-stage__no {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.ce-stage__method { font-family: var(--serif); font-size: 19px; line-height: 1.2; }
+.ce-stage__paper {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin-top: auto;
+}
+.ce-scope__flywheel {
+  position: relative;
+  height: 29px;
+  /* dropped below the stage row by the arrowhead's height so the left riser can
+     terminate flush at the arrowhead base; bottom stays put (11 + 29 = 40). */
+  margin: 11px 16.6% 0;
+  border: 1.5px solid var(--accent);
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+}
+.ce-scope__flywheel::before {
+  content: "";
+  position: absolute;
+  /* arrowhead centered on the 1.5px left riser: containing block is the
+     flywheel padding box, so left:0 == inner edge of the riser border.
+     triangle centerline sits at left + 6px (half of the 12px width).
+     base flush with the riser top (top:-9 == border-bottom height); the tip
+     then sits in the gap above, pointing at card 1 without overlapping it. */
+  left: -6.75px;
+  top: -9px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 9px solid var(--accent);
+}
+.ce-scope__dot {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 20%, transparent);
+  animation: ce-flow 3.6s linear infinite;
+}
+@keyframes ce-flow {
+  0%   { left: 97%; opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { left: 3%; opacity: 0; }
+}
+.ce-scope__flywheel-label {
+  position: absolute;
+  left: 50%;
+  bottom: -11px;
+  transform: translateX(-50%);
+  background: var(--paper);
+  padding: 0 12px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.ce-scope__mobilenote { display: none; }
+
+/* ---------- hover/focus-linked publication reveal (within Research) ----------
+   One paper is shown at a time, driven by the active stage card above.
+   Pure CSS via :has() + :focus-within. Mobile shows all three (see @media). */
+.ce-pubview {
+  position: relative;
+  display: grid;            /* stack every item in one cell -> zero layout jump */
+  margin: 18px 0 0;
+  padding: 16px 20px 18px;
+  border: 1px solid var(--soft);
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--paper-2) 45%, transparent);
+  min-height: 128px;
+  scroll-margin-top: calc(var(--nav-h) + 8px);
+}
+.ce-pubview__hint {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--meta);
+  opacity: .7;
+  pointer-events: none;
+  transition: opacity .2s ease;
+}
+.ce-pubview__item {
+  grid-area: 1 / 1;         /* all items overlap -> panel sizes to the tallest */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .22s ease;
+}
+/* default reveal: the auto-cycled paper (JS data-active), or the first when JS is inactive */
+.ce-arc[data-active="01"] .ce-pubview__item[data-pub="01"],
+.ce-arc[data-active="02"] .ce-pubview__item[data-pub="02"],
+.ce-arc[data-active="03"] .ce-pubview__item[data-pub="03"],
+.ce-arc:not([data-active]) .ce-pubview__item[data-pub="01"] {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* (A) any stage interaction first clears the default paper ... */
+.ce-arc:has(.ce-stage:hover) .ce-pubview__item,
+.ce-arc:has(.ce-stage:focus-within) .ce-pubview__item {
+  opacity: 0;
+  visibility: hidden;
+}
+/* (B) ... then reveal only the paper matching the active stage */
+.ce-arc:has(.ce-stage[data-pub="01"]:hover) .ce-pubview__item[data-pub="01"],
+.ce-arc:has(.ce-stage[data-pub="01"]:focus-within) .ce-pubview__item[data-pub="01"],
+.ce-arc:has(.ce-stage[data-pub="02"]:hover) .ce-pubview__item[data-pub="02"],
+.ce-arc:has(.ce-stage[data-pub="02"]:focus-within) .ce-pubview__item[data-pub="02"],
+.ce-arc:has(.ce-stage[data-pub="03"]:hover) .ce-pubview__item[data-pub="03"],
+.ce-arc:has(.ce-stage[data-pub="03"]:focus-within) .ce-pubview__item[data-pub="03"] {
+  opacity: 1;
+  visibility: visible;
+}
+/* fade out the affordance hint once a stage is engaged */
+.ce-arc:has(.ce-stage:hover) .ce-pubview__hint,
+.ce-arc:has(.ce-stage:focus-within) .ce-pubview__hint {
+  opacity: 0;
+}
+
+/* ---------- publications ---------- */
+.ce-pub {
+  padding: 18px 0;
+  border-top: 1px solid var(--soft);
+}
+.ce-pub:last-child { border-bottom: 1px solid var(--soft); }
+.ce-pub__stage {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin: 0 0 8px;
+}
+.ce-pub__stage b { color: var(--accent); }
+.ce-pub__venue {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: var(--accent);
+  margin: 0 0 6px;
+}
+.ce-pub__venue .yr { color: var(--meta); font-weight: 400; }
+.ce-pub__title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.22;
+  margin: 0 0 6px;
+}
+.ce-pub__authors {
+  font-size: 14.5px;
+  color: var(--meta);
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+.ce-pub__authors .self { color: var(--ink); font-weight: 600; font-style: normal; }
+.ce-pub__links { display: flex; flex-wrap: wrap; gap: 7px; }
+.ce-pub__links a {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: 1px solid var(--soft);
+  padding: 4px 9px;
+  color: var(--meta);
+}
+.ce-pub__links a:hover { border-color: var(--accent); color: var(--ink); }
+.ce-pub__more {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-top: 18px;
+}
+.ce-pub__more a { box-shadow: inset 0 -1px 0 var(--accent); }
+
+/* ---------- footer ---------- */
+.ce-foot {
+  border-top: 1px solid var(--ink);
+  margin-top: 40px;
+  padding: 28px 0 56px;
+}
+.ce-foot__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 18px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--meta);
+}
+.ce-foot__grid a { color: var(--meta); box-shadow: inset 0 -1px 0 var(--soft); }
+.ce-foot__grid a:hover { color: var(--ink); box-shadow: inset 0 -1px 0 var(--accent); }
+.ce-foot__colophon { margin-top: 18px; font-family: var(--mono); font-size: 10px; letter-spacing: .06em; color: var(--meta); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 760px) {
+  body { font-size: 17px; }
+  .ce-hero {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 36px 0 28px;
+  }
+  .ce-hero__name { font-size: 44px; }
+  .ce-photo { max-width: 220px; order: -1; }
+  .ce-nav__name { font-size: 11px; }
+  /* keep slim identity a compact row on mobile; top-align photo with the name */
+  .ce-hero--slim { grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 18px; padding: 30px 0 22px; }
+  .ce-hero--slim .ce-hero__name { font-size: 34px; }
+  .ce-hero--slim .ce-photo--slim { order: 0; width: 72px; max-width: 72px; }
+  .ce-hero--slim .ce-photo--slim img { width: 72px; height: 72px; }
+  .ce-arc__row { grid-template-columns: 1fr; }
+  .ce-arc__arrow { transform: rotate(90deg); padding: 8px 0; justify-self: center; }
+  .ce-scope__flywheel { display: none; }
+  .ce-scope__mobilenote {
+    display: block;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-top: 14px;
+  }
+  /* touch has no hover: drop the auto/default stage highlight and show every paper */
+  .ce-arc:not(:has(.ce-stage:hover)):not(:has(.ce-stage:focus-within)) .ce-stage {
+    border-color: var(--soft);
+    background: color-mix(in srgb, var(--paper-2) 55%, transparent);
+    box-shadow: none;
+  }
+  .ce-pubview { display: block; min-height: 0; padding: 2px 16px; }
+  .ce-pubview__hint { display: none; }
+  .ce-pubview__item {
+    opacity: 1 !important;
+    visibility: visible !important;
+    padding: 16px 0;
+    border-top: 1px solid var(--soft);
+  }
+  .ce-pubview__item:first-of-type { border-top: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ce-ticker__track { animation: none; }
+  .ce-photo img { transition: none; }
+  .ce-scope__dot { animation: none; left: 50%; }
+}

@@ -1,0 +1,34 @@
+# Service & talks (§04). code = year; tag = activity type.
+entries:
+  - code: "2025"
+    title: ICCV VCL Challenges
+    sub: "Visual Continual Learning challenge"
+    tag: Organizer
+
+  - code: "2025"
+    title: "Chain-of-Action: Trajectory Autoregressive Modeling for Robotic Manipulation"
+    sub: "Lumina Embodied AI & RL China"
+    tag: Talk
+    links:
+      - { label: Lumina, url: "https://lumina-embodied.ai/talks" }
+      - { label: RL China Video, url: "https://www.bilibili.com/video/BV1qUvNzmEmA/" }
+
+  - code: "2022"
+    title: "Student Representative Speech, Commencement Ceremony"
+    sub: "Graduate School of Computer Science, Sichuan University"
+    tag: Speech
+    links:
+      - { label: Article, url: "https://mp.weixin.qq.com/s/4icGmMq8YKJ61BqGL4EJKg" }
+
+reviewing:
+  - CVPR
+  - ICCV
+  - ECCV
+  - ICML
+  - NeurIPS
+  - ICLR
+  - AAAI
+  - IJCAI
+  - Neurocomputing
+  - IEEE TIP
+  - Pattern Recognition

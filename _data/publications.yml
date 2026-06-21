@@ -1,0 +1,37 @@
+# Selected publications (§03), rendered as catalog entries.
+# Kept in sync manually with _bibliography/pubs.bib (selected={true}).
+# Ordered along the VLA model lifecycle (Training -> Post-Training -> Deployment),
+# closing a data flywheel back into training. stage_* drives the per-paper label.
+- venue: NeurIPS
+  year: 2025
+  title: "Chain-of-Action: Trajectory Autoregressive Modeling for Robotic Manipulation"
+  authors: "Wenbo Zhang, Tianrun Hu, Yanyuan Qiao, Hanbo Zhang, Yuchu Qin, Yang Li, Jiajun Liu, Tao Kong, Lingqiao Liu, Xiao Ma"
+  preview: CoA.png
+  stage_no: "01"
+  stage_phase: Training
+  stage_method: Action Modeling
+  links:
+    - { label: arXiv, url: "https://arxiv.org/pdf/2506.09990" }
+    - { label: Code, url: "https://github.com/ByteDance-Seed/Chain-of-Action" }
+    - { label: Website, url: "https://chain-of-action.github.io/" }
+
+- venue: ICRA
+  year: 2025
+  title: "Effective Tuning Strategies for Generalist Robot Manipulation Policies"
+  authors: "Wenbo Zhang, Yang Li, Yanyuan Qiao, Siyuan Huang, Jiajun Liu, Feras Dayoub, Xiao Ma, Lingqiao Liu"
+  preview: EFT.png
+  stage_no: "02"
+  stage_phase: Post-Training
+  stage_method: SFT Strategies
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2410.01220" }
+
+- venue: Preprint
+  year: 2026
+  title: "TTT-VLA: Test-Time Latent Prompt Optimization for Vision-Language-Action Models"
+  authors: "Wenbo Zhang, Jianxiong Li, Shuai Yang, Sijin Chen, Jiajun Liu, Lingqiao Liu, Xiao Ma"
+  stage_no: "03"
+  stage_phase: Deployment
+  stage_method: Test-Time Training
+  links:
+    - { label: arXiv, url: "https://arxiv.org/abs/2606.03127" }
