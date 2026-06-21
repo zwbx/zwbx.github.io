@@ -15,9 +15,9 @@
   <meta property="og:url" content="{{ '/' | absolute_url }}">
   {% if page.photo %}<meta property="og:image" content="{{ page.photo | prepend: '/assets/img/' | absolute_url }}">{% endif %}
 
-  {% if site.icon != empty %}
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ site.icon }}</text></svg>">
-  {% endif %}
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +52,10 @@
   </div>
 
   <main class="ce-wrap" id="top">
+
+    <!-- first screen: hero + §01 Research fill ≥ one viewport so the PROFILE/CV divider sits below the fold -->
+    <div class="ce-firstscreen">
+    <div class="ce-firstscreen__inner">
 
     <!-- ===================== SLIM IDENTITY ===================== -->
     <header class="ce-hero ce-hero--slim">
@@ -170,6 +174,9 @@
         {% endif %}
       </div>
     </section>
+
+    </div><!-- /.ce-firstscreen__inner -->
+    </div><!-- /.ce-firstscreen -->
 
     <!-- ===================== PROFILE / CV DIVIDER ===================== -->
     <div class="ce-groupdiv"><span class="ce-groupdiv__label">Profile / CV</span></div>
@@ -302,6 +309,92 @@
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) stop(); else start();
     });
+  })();
+  </script>
+
+  <!-- first-screen scale-to-fit: keep the slim hero + §01 Research (incl. the 3-paper
+       panel) within one viewport on desktop, so the PROFILE/CV divider lands just below
+       the fold on any screen height. Disabled below 900px so mobile flows/scrolls. -->
+  <script>
+  (function () {
+    var outer = document.querySelector('.ce-firstscreen');
+    if (!outer) return;
+    var inner = outer.querySelector('.ce-firstscreen__inner');
+    if (!inner) return;
+
+    var MIN_WIDTH = 900;   // desktop-only fitting
+    var MIN_SCALE = 0.62;  // never shrink below this (legibility floor)
+    var SAFETY = 2;        // px breathing room so the divider clears the fold
+
+    function chromeHeight() {
+      var h = 0;
+      var nav = document.querySelector('.ce-nav');
+      var ticker = document.querySelector('.ce-ticker');
+      if (nav) h += nav.getBoundingClientRect().height;
+      if (ticker) h += ticker.getBoundingClientRect().height;
+      if (h <= 0) { // fallback to CSS custom properties
+        var cs = getComputedStyle(document.documentElement);
+        var navH = parseFloat(cs.getPropertyValue('--nav-h')) || 52;
+        var tickerH = parseFloat(cs.getPropertyValue('--ticker-h')) || 33;
+        h = navH + tickerH + 1;
+      }
+      return h;
+    }
+
+    function reset() {
+      inner.style.transform = '';
+      outer.style.height = '';
+      outer.classList.remove('is-fitted');
+    }
+
+    function fit() {
+      if (window.innerWidth < MIN_WIDTH) { reset(); return; }
+
+      // always clear our own inline values before measuring -> no feedback loop
+      inner.style.transform = '';
+      outer.style.height = '';
+      void inner.offsetHeight; // force reflow
+
+      var chromeH = chromeHeight();
+      var available = window.innerHeight - chromeH - SAFETY;
+      var natural = inner.offsetHeight;
+      if (available <= 0 || natural <= 0) { reset(); return; }
+
+      var scale = available / natural;
+      if (scale > 1) scale = 1;
+      if (scale < MIN_SCALE) scale = MIN_SCALE;
+      var scaledH = natural * scale;
+
+      inner.style.transformOrigin = 'top center';
+      if (scaledH > available) {
+        // min-scale fallback (e.g. 1366x768): still taller than one screen — accept
+        // a slight overflow rather than illegible micro-text.
+        inner.style.transform = 'scale(' + scale + ')';
+        outer.style.height = scaledH + 'px';
+      } else {
+        var offsetY = Math.max(0, (available - scaledH) / 2);
+        inner.style.transform = 'translateY(' + offsetY + 'px) scale(' + scale + ')';
+        outer.style.height = available + 'px';
+      }
+      outer.classList.add('is-fitted');
+    }
+
+    var rt;
+    function onResize() { window.clearTimeout(rt); rt = window.setTimeout(fit, 120); }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', fit);
+    } else {
+      fit();
+    }
+    window.addEventListener('resize', onResize);
+    window.addEventListener('orientationchange', fit);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(fit); }
+    var imgs = inner.querySelectorAll('img');
+    for (var k = 0; k < imgs.length; k++) {
+      if (!imgs[k].complete) imgs[k].addEventListener('load', fit);
+    }
+    window.setTimeout(fit, 300); // catch late layout (web fonts / async)
   })();
   </script>
 

@@ -17,6 +17,7 @@
 
   --wrap: 940px;
   --nav-h: 52px;
+  --ticker-h: 33px; /* ticker strip total height incl. its 1px bottom border */
 }
 
 /* ---------- reset / base ---------- */
@@ -239,8 +240,8 @@ img { max-width: 100%; display: block; }
 .ce-hero--slim .ce-hero__name { font-size: 42px; margin: 0 0 6px; }
 .ce-hero--slim .ce-hero__role { margin: 0 0 10px; }
 .ce-hero--slim .ce-status--now { margin-bottom: 14px; }
-.ce-photo--slim { width: 96px; margin: 0; }
-.ce-photo--slim img { width: 96px; height: 96px; object-fit: cover; object-position: center 30%; }
+.ce-photo--slim { width: 120px; margin: 0; }
+.ce-photo--slim img { width: 120px; height: 120px; object-fit: cover; object-position: center 30%; }
 
 /* hover-swap photo: pixel-art base, real photo cross-fades in on hover/focus */
 .ce-photo--swap { cursor: pointer; }
@@ -269,6 +270,27 @@ img { max-width: 100%; display: block; }
 }
 .ce-photo--swap:hover::after,
 .ce-photo--swap:focus-within::after { opacity: 0; }
+
+/* first screen: hero + §01 Research fill at least one viewport height, minus the
+   sticky nav (incl. its 1px border) + the ticker strip, so the PROFILE/CV divider
+   that follows always starts at/just below the fold regardless of screen height.
+   It is a min-height only: on short viewports the content is taller and simply
+   flows/scrolls — nothing is clipped. */
+.ce-firstscreen { overflow: visible; }
+/* no-JS / mobile fallback: reserve one viewport via min-height. When the scale-to-fit
+   controller is active it adds .is-fitted and drives an explicit height instead. */
+.ce-firstscreen:not(.is-fitted) {
+  min-height: calc(100vh - var(--nav-h) - var(--ticker-h) - 1px);  /* fallback for no-dvh browsers */
+  min-height: calc(100dvh - var(--nav-h) - var(--ticker-h) - 1px);
+}
+/* the scaled element: transform-origin top center, scale<=1 -> never wider than wrap */
+.ce-firstscreen__inner {
+  width: 100%;
+  transition: transform .15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ce-firstscreen__inner { transition: none; }
+}
 
 /* ---------- section header ---------- */
 .ce-sec { padding: 30px 0; scroll-margin-top: calc(var(--nav-h) + 8px); }
@@ -646,8 +668,18 @@ img { max-width: 100%; display: block; }
   animation: ce-flow 3.6s linear infinite;
 }
 @keyframes ce-flow {
+  /* entry/exit fades unchanged. The mid-run dip (1->0->1) hides the dot while it
+     crosses behind the centred "Data Flywheel" label so its glow never slivers out:
+     it reads as the dot diving into the tag and emerging on the far side. Window
+     sized for the narrowest desktop flywheel (~475px @768w): label spans 34.3-65.7%
+     of the line; +-1.8% covers the dot radius+glow, mapped to progress via
+     p = (97 - left)/94, then padded slightly. */
   0%   { left: 97%; opacity: 0; }
   8%   { opacity: 1; }
+  27%  { opacity: 1; }
+  31%  { opacity: 0; }
+  69%  { opacity: 0; }
+  73%  { opacity: 1; }
   92%  { opacity: 1; }
   100% { left: 3%; opacity: 0; }
 }
@@ -827,8 +859,8 @@ img { max-width: 100%; display: block; }
   /* keep slim identity a compact row on mobile; top-align photo with the name */
   .ce-hero--slim { grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 18px; padding: 30px 0 22px; }
   .ce-hero--slim .ce-hero__name { font-size: 34px; }
-  .ce-hero--slim .ce-photo--slim { order: 0; width: 72px; max-width: 72px; }
-  .ce-hero--slim .ce-photo--slim img { width: 72px; height: 72px; }
+  .ce-hero--slim .ce-photo--slim { order: 0; width: 90px; max-width: 90px; }
+  .ce-hero--slim .ce-photo--slim img { width: 90px; height: 90px; }
   .ce-arc__row { grid-template-columns: 1fr; }
   .ce-arc__arrow { transform: rotate(90deg); padding: 8px 0; justify-self: center; }
   .ce-scope__flywheel { display: none; }
@@ -862,5 +894,7 @@ img { max-width: 100%; display: block; }
 @media (prefers-reduced-motion: reduce) {
   .ce-ticker__track { animation: none; }
   .ce-photo img { transition: none; }
-  .ce-scope__dot { animation: none; left: 50%; }
+  /* no animation -> a static dot would otherwise park on the line and sliver past
+     the label; hide it entirely instead. */
+  .ce-scope__dot { animation: none; opacity: 0; }
 }
