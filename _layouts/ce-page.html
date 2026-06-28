@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>{{ page.title }} — {{ site.first_name }} {{ site.last_name }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+
+  <!-- Favicons (match _includes/head.html) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+  <link rel="icon" type="image/png" sizes="256x256" href="{{ '/assets/img/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/img/favicon.png' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/ce.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/ce-rvss.css' | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+</head>
+
+<body>
+
+  <!-- ===================== TOP NAV ===================== -->
+  <nav class="ce-nav">
+    <div class="ce-nav__inner">
+      <a class="ce-nav__name" href="{{ '/' | relative_url }}">{{ site.first_name }} <b>{{ site.last_name }}</b></a>
+      <ul class="ce-nav__index">
+        <li><a class="ce-nav__link" href="{{ '/#research' | relative_url }}">Research</a></li>
+        <li><a class="ce-nav__link" href="{{ '/#awards' | relative_url }}">Awards</a></li>
+        <li><a class="ce-nav__link" href="{{ '/' | relative_url }}">← Index</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="ce-wrap">
+
+    <!-- ===================== PAGE HEAD ===================== -->
+    <header class="ce-page__head">
+      {% if page.kicker %}<div class="ce-page__kicker">{{ page.kicker }}</div>{% endif %}
+      <h1 class="ce-page__title">{{ page.title }}</h1>
+      {% if page.description %}<p class="ce-page__meta">{{ page.description }}</p>{% endif %}
+    </header>
+
+    <!-- ===================== BODY ===================== -->
+    <article class="ce-prose">
+      {{ content }}
+    </article>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="ce-foot">
+    <div class="ce-wrap">
+      <div class="ce-foot__grid">
+        <span>&copy; {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
+        <span>
+          <a href="https://scholar.google.com/citations?hl=en&user=A-qS5eYAAAAJ" target="_blank" rel="noopener">Scholar</a> ·
+          <a href="https://github.com/zwbx" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://x.com/_wenbozhang" target="_blank" rel="noopener">X</a>
+        </span>
+        {% if site.last_updated %}<span>Last updated {{ "now" | date: '%b %Y' }}</span>{% endif %}
+      </div>
+      <p class="ce-foot__colophon">Type: Newsreader / IBM Plex Mono · Built with Jekyll · System-catalog layout</p>
+    </div>
+  </footer>
+
+</body>
+</html>

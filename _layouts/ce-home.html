@@ -245,13 +245,8 @@
       {% for a in site.data.awards %}
       <div class="ce-entry">
         <div class="ce-entry__main">
-          <div class="ce-entry__title">{{ a.title }}</div>
+          <div class="ce-entry__title">{% if a.url %}<a href="{{ a.url }}">{{ a.title }}</a>{% else %}{{ a.title }}{% endif %}</div>
           {% if a.sub %}<div class="ce-entry__sub">{{ a.sub }}</div>{% endif %}
-          {% if a.url %}
-          <div class="ce-pub__links" style="margin-top:8px;">
-            <a href="{{ a.url }}">Details</a>
-          </div>
-          {% endif %}
         </div>
         <div class="ce-entry__meta">
           <span class="ce-entry__year">{{ a.code }}</span>

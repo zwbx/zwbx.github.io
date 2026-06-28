@@ -1,0 +1,179 @@
+/* =============================================================
+   CE — sub-page styles (RVSS competition & other ce-page docs)
+   Reuses the variables/look from ce.css (loaded first). No Bootstrap.
+   ============================================================= */
+
+/* ---------- page head ---------- */
+.ce-page__head {
+  padding: 40px 0 22px;
+  margin: 0 0 8px;
+  border-bottom: 1px solid var(--soft);
+}
+.ce-page__kicker {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 10px;
+}
+.ce-page__title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: -.015em;
+  margin: 0 0 10px;
+}
+.ce-page__meta {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin: 0;
+}
+
+/* ---------- prose body ---------- */
+.ce-prose {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.62;
+  color: var(--ink);
+  padding-bottom: 8px;
+}
+
+/* readable measure for text blocks; media (video/gallery/hr) stays full-width */
+.ce-prose > p,
+.ce-prose > ol,
+.ce-prose > ul {
+  max-width: 66ch;
+}
+
+.ce-prose p { margin: 0 0 1em; }
+
+/* mono uppercase, hairline-topped section headers (matches .ce-sechead__title) */
+.ce-prose h1,
+.ce-prose h2,
+.ce-prose h3,
+.ce-prose h4,
+.ce-prose h5,
+.ce-prose h6 {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 42px 0 16px;
+  padding-top: 18px;
+  border-top: 1px solid var(--soft);
+  scroll-margin-top: calc(var(--nav-h) + 8px);
+}
+/* first heading flows from the page-head divider — no doubled rule */
+.ce-prose > h1:first-child,
+.ce-prose > h2:first-child,
+.ce-prose > h3:first-child,
+.ce-prose > h4:first-child,
+.ce-prose > h5:first-child,
+.ce-prose > h6:first-child {
+  margin-top: 8px;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* inline links — terracotta underline */
+.ce-prose a {
+  color: var(--ink);
+  box-shadow: inset 0 -1px 0 var(--accent);
+}
+.ce-prose a:hover {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.ce-prose strong { font-weight: 600; color: var(--ink); }
+
+/* numbered strategy list — mono decimal-leading-zero counters in accent */
+.ce-prose ol {
+  counter-reset: ce-li;
+  list-style: none;
+  margin: 0 0 1.2em;
+  padding: 0;
+}
+.ce-prose ol > li {
+  position: relative;
+  padding-left: 2.6em;
+  margin: 0 0 .85em;
+}
+.ce-prose ol > li::before {
+  counter-increment: ce-li;
+  content: counter(ce-li, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: .2em;
+  font-family: var(--mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  color: var(--accent);
+}
+
+/* ---------- section divider ---------- */
+.rvss-section-divider,
+.ce-prose hr {
+  border: 0;
+  border-top: 1px solid var(--soft);
+  margin: 34px 0;
+  max-width: none;
+}
+
+/* ---------- video ---------- */
+.rvss-video {
+  max-width: none;
+  margin: 10px 0 4px;
+  text-align: left;
+}
+.rvss-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ink);
+  background: var(--paper-2);
+}
+
+/* ---------- photo gallery — non-cropping multi-column flow ---------- */
+.rvss-gallery {
+  columns: 2;
+  column-gap: 16px;
+  max-width: none;
+  margin: 6px 0 0;
+}
+.rvss-gallery p {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  margin: 0 0 16px;
+}
+.rvss-gallery img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--soft);
+}
+.rvss-gallery em {
+  display: block;
+  font-style: normal;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--meta);
+  margin: 6px 0 0;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 760px) {
+  .ce-page__title { font-size: 34px; }
+  .ce-prose { font-size: 17px; }
+  .rvss-gallery { columns: 1; }
+}

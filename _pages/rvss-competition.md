@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: ce-page
 title: Robotic Vision Summer School Competition
 permalink: /rvss-competition/
 description: Kiola, Australia, 2024
