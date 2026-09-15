@@ -275,25 +275,50 @@
     </div>
   </footer>
 
-  <!-- research arc: auto-cycle the stage cards; pauses on hover/focus, off when reduced-motion -->
+  <!-- research arc: auto-cycle the stage cards; pauses on hover/focus, off when reduced-motion.
+       Hovering a stage also pins data-active, so the paper stays put while the pointer
+       travels down to click links (CSS :hover alone would snap back to the cycled paper). -->
   <script>
   (function () {
     var arc = document.querySelector('.ce-arc');
     if (!arc) return;
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    if (!window.matchMedia('(hover: hover)').matches) return;
 
+    var canHover = window.matchMedia('(hover: hover)').matches;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var stages = ['01', '02', '03'];
     var i = 0;
     var timer = null;
 
     function render() { arc.setAttribute('data-active', stages[i]); }
     function advance() { i = (i + 1) % stages.length; render(); }
-    function start() { if (!timer) timer = window.setInterval(advance, 3200); }
+    function start() {
+      if (reduceMotion || !canHover) return;
+      if (!timer) timer = window.setInterval(advance, 3200);
+    }
     function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
+    function activate(id) {
+      var idx = stages.indexOf(id);
+      if (idx < 0) return;
+      i = idx;
+      render();
+    }
+
+    if (canHover) {
+      var cards = arc.querySelectorAll('.ce-stage');
+      for (var n = 0; n < cards.length; n++) {
+        cards[n].addEventListener('mouseenter', function () {
+          activate(this.getAttribute('data-pub'));
+        });
+        cards[n].addEventListener('focus', function () {
+          activate(this.getAttribute('data-pub'));
+        });
+      }
+    }
 
     render();
     start();
+
+    if (reduceMotion || !canHover) return;
 
     arc.addEventListener('mouseenter', stop);
     arc.addEventListener('mouseleave', start);

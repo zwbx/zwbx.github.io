@@ -702,7 +702,9 @@ img { max-width: 100%; display: block; }
 
 /* ---------- hover/focus-linked publication reveal (within Research) ----------
    One paper is shown at a time, driven by the active stage card above.
-   Pure CSS via :has() + :focus-within. Mobile shows all three (see @media). */
+   CSS :hover/:focus-within is the instant preview; JS pins data-active on
+   stage mouseenter so the paper stays after the pointer leaves the stage
+   (needed to reach the links). Mobile shows all three (see @media). */
 .ce-pubview {
   position: relative;
   display: grid;            /* stack every item in one cell -> zero layout jump */
