@@ -240,6 +240,27 @@ img { max-width: 100%; display: block; }
 .ce-hero--slim .ce-hero__name { font-size: 42px; margin: 0 0 6px; }
 .ce-hero--slim .ce-hero__role { margin: 0 0 10px; }
 .ce-hero--slim .ce-status--now { margin-bottom: 14px; }
+/* latest-work callout under NOW — same accent rail, serif title */
+.ce-highlight__title {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  letter-spacing: 0;
+  line-height: 1.3;
+  color: var(--ink);
+  max-width: 52ch;
+}
+.ce-highlight__title:hover { color: var(--accent); }
+.ce-highlight__note { color: var(--meta); font-size: 11px; }
+.ce-highlight__links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.ce-highlight__links a {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: 1px solid var(--soft);
+  padding: 2px 7px;
+  color: var(--meta);
+}
+.ce-highlight__links a:hover { border-color: var(--accent); color: var(--ink); }
 .ce-photo--slim { width: 120px; margin: 0; }
 .ce-photo--slim img { width: 120px; height: 120px; object-fit: cover; object-position: center 30%; }
 
@@ -345,6 +366,40 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--soft);
 }
 .ce-entry:last-child { border-bottom: 1px solid var(--soft); }
+
+/* news list — date column + one-line item, rules match .ce-entry */
+.ce-news { list-style: none; margin: 0; padding: 0; }
+.ce-news__item {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 4px 20px;
+  align-items: baseline;
+  padding: 11px 0;
+  border-top: 1px solid var(--soft);
+}
+.ce-news__item:last-child { border-bottom: 1px solid var(--soft); }
+.ce-news__date {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.ce-news__text { font-size: 16.5px; line-height: 1.45; }
+.ce-news__text strong { font-weight: 600; }
+.ce-news__text a { box-shadow: inset 0 -1px 0 var(--soft); }
+.ce-news__text a:hover { box-shadow: inset 0 -1px 0 var(--accent); }
+.ce-news .ce-refs {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 4px;
+}
+.ce-news .ce-refs a { color: var(--accent); box-shadow: none; margin-right: 6px; }
+.ce-news .ce-refs a:hover { color: var(--ink); }
 .ce-entry__meta {
   display: flex;
   flex-direction: column;

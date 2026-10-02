@@ -7,6 +7,15 @@ status: Research Intern @ ByteDance Seed, Beijing
 now:
   - Research Intern @ ByteDance Seed, Beijing
   - PhD Candidate @ Adelaide University, Australia
+highlight:
+  label: New · Sep 2026
+  title: "An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond"
+  url: https://robodojo-benchmark.com/report/gpt-6-astra-eval
+  note: Co-first author & project lead · RoboDojo Team
+  links:
+    - { label: Report, url: "https://robodojo-benchmark.com/report/gpt-6-astra-eval" }
+    - { label: arXiv, url: "https://arxiv.org/abs/2609.24170" }
+    - { label: Code, url: "https://github.com/robodojo-benchmark/RoboDojo" }
 location: Beijing · Adelaide
 photo: wenbo-pixel.png
 photo_hover: wenbo-real.png
