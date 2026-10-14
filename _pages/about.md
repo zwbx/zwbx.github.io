@@ -5,6 +5,7 @@ permalink: /
 role: Ph.D. Candidate · Embodied AI · Robotic Manipulation
 status: Research Intern @ ByteDance Seed, Beijing
 now:
+  - Visiting Student with Mengdi Xu @ Tsinghua IIIS
   - Research Intern @ ByteDance Seed, Beijing
   - PhD Candidate @ Adelaide University, Australia
 highlight:
