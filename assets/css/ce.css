@@ -179,6 +179,8 @@ img { max-width: 100%; display: block; }
   margin-bottom: 2px;
 }
 .ce-status__line { color: var(--ink); }
+.ce-status__line a { box-shadow: inset 0 -1px 0 var(--soft); }
+.ce-status__line a:hover { color: var(--accent); box-shadow: inset 0 -1px 0 var(--accent); }
 .ce-bio {
   font-size: 18px;
   max-width: 46ch;
@@ -292,26 +294,10 @@ img { max-width: 100%; display: block; }
 .ce-photo--swap:hover::after,
 .ce-photo--swap:focus-within::after { opacity: 0; }
 
-/* first screen: hero + §01 Research fill at least one viewport height, minus the
-   sticky nav (incl. its 1px border) + the ticker strip, so the PROFILE/CV divider
-   that follows always starts at/just below the fold regardless of screen height.
-   It is a min-height only: on short viewports the content is taller and simply
-   flows/scrolls — nothing is clipped. */
+/* first screen wrapper. Content stays at its natural size and scrolls;
+   nothing is scaled to fit the viewport. */
 .ce-firstscreen { overflow: visible; }
-/* no-JS / mobile fallback: reserve one viewport via min-height. When the scale-to-fit
-   controller is active it adds .is-fitted and drives an explicit height instead. */
-.ce-firstscreen:not(.is-fitted) {
-  min-height: calc(100vh - var(--nav-h) - var(--ticker-h) - 1px);  /* fallback for no-dvh browsers */
-  min-height: calc(100dvh - var(--nav-h) - var(--ticker-h) - 1px);
-}
-/* the scaled element: transform-origin top center, scale<=1 -> never wider than wrap */
-.ce-firstscreen__inner {
-  width: 100%;
-  transition: transform .15s ease;
-}
-@media (prefers-reduced-motion: reduce) {
-  .ce-firstscreen__inner { transition: none; }
-}
+.ce-firstscreen__inner { width: 100%; }
 
 /* ---------- section header ---------- */
 .ce-sec { padding: 30px 0; scroll-margin-top: calc(var(--nav-h) + 8px); }
