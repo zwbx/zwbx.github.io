@@ -63,6 +63,12 @@
       <div class="ce-hero__id">
         <h1 class="ce-hero__name">{{ site.first_name }} {{ site.last_name }}<span class="dot">.</span></h1>
         {% if page.role %}<p class="ce-hero__role">{{ page.role }}</p>{% endif %}
+        {% if page.seeking %}
+        <p class="ce-seek">
+          <span class="ce-seek__label">{{ page.seeking.label }}</span>
+          <span class="ce-seek__text">{{ page.seeking.text }}</span>
+        </p>
+        {% endif %}
         {% if page.now %}
         <div class="ce-status ce-status--now">
           <span class="ce-status__label">Now</span>

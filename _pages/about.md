@@ -4,6 +4,9 @@ title: Home
 permalink: /
 role: Ph.D. Candidate · Embodied AI · Robotic Manipulation
 status: Research Intern @ ByteDance Seed, Beijing
+seeking:
+  label: Graduating
+  text: "Looking for opportunities in <b>agentic robotics</b>."
 now:
   - 'Visiting Student with <a href="https://www.mengdixu.me/" target="_blank" rel="noopener">Mengdi Xu</a> @ Tsinghua IIIS'
   - 'Research Intern with <a href="https://yusufma03.github.io/" target="_blank" rel="noopener">Xiao Ma</a> @ ByteDance Seed, Beijing'
