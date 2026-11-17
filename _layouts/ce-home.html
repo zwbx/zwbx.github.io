@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>{{ site.first_name }} {{ site.last_name }}{% if page.role %} — {{ page.role }}{% endif %}</title>
-  <meta name="description" content="{{ page.meta_description | default: 'Wenbo Zhang — Ph.D. Candidate in Embodied AI and Robotic Manipulation.' }}">
+  <meta name="description" content="{{ page.meta_description | default: 'Wenbo Zhang — PhD Student in Embodied AI and Robotic Manipulation.' }}">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ site.first_name }} {{ site.last_name }}">
-  <meta property="og:description" content="{{ page.meta_description | default: 'Ph.D. Candidate in Embodied AI and Robotic Manipulation.' }}">
+  <meta property="og:description" content="{{ page.meta_description | default: 'PhD Student in Embodied AI and Robotic Manipulation.' }}">
   <meta property="og:url" content="{{ '/' | absolute_url }}">
   {% if page.photo %}<meta property="og:image" content="{{ page.photo | prepend: '/assets/img/' | absolute_url }}">{% endif %}
 

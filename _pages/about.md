@@ -2,7 +2,7 @@
 layout: ce-home
 title: Home
 permalink: /
-role: Ph.D. Candidate · Embodied AI · Robotic Manipulation
+role: PhD Student · Embodied AI · Robotic Manipulation
 status: Research Intern @ ByteDance Seed, Beijing
 seeking:
   label: Graduating
@@ -10,7 +10,7 @@ seeking:
 now:
   - 'Visiting Student with <a href="https://www.mengdixu.me/" target="_blank" rel="noopener">Mengdi Xu</a> @ Tsinghua IIIS'
   - 'Research Intern with <a href="https://yusufma03.github.io/" target="_blank" rel="noopener">Xiao Ma</a> @ ByteDance Seed, Beijing'
-  - PhD Candidate @ Adelaide University, Australia
+  - PhD Student @ Adelaide University, Australia
 highlight:
   label: New · Sep 2026
   title: "An Unexpected Robot Policy: Early Evaluations of GPT-6 Astra on RoboDojo and Beyond"
@@ -24,11 +24,11 @@ location: Beijing · Adelaide
 photo: wenbo-pixel.png
 photo_hover: wenbo-real.png
 photo_code: FIG.01 / WZ
-meta_description: Wenbo Zhang — Ph.D. Candidate at AIML, University of Adelaide, working on Embodied AI and Robotic Manipulation.
+meta_description: Wenbo Zhang — PhD Student at AIML, University of Adelaide, working on Embodied AI and Robotic Manipulation.
 research_lead: Building physical agents that self-improve through experience.
 research_body: I work on embodied AI and robotic manipulation — toward autonomous systems that learn from their own experience and help with everyday tasks, without a human in the loop.
 ---
 
-I'm a Ph.D. candidate at the [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/), University of Adelaide, advised by Lingqiao Liu and Feras Dayoub. I started under the late Prof. Yifan Liu, who supported my academic journey at its beginning.
+I'm a PhD Student at the [Australian Institute for Machine Learning (AIML)](https://www.adelaide.edu.au/aiml/), University of Adelaide, advised by Lingqiao Liu and Feras Dayoub. I started under the late Prof. Yifan Liu, who supported my academic journey at its beginning.
 
 Before Adelaide I earned my M.Eng. at Sichuan University with Keren Fu, and gained industry research experience at SenseTime and Shanghai AI Lab. I welcome academic discussions and collaborations.
